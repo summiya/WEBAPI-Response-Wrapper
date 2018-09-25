@@ -1,0 +1,332 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\ApplicationInsights.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\AkshaakWebAPI.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\AkshaakWebAPI.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\AkshaakWebAPI.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csc.exe
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csc.exe.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csc.rsp
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csi.exe
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csi.exe.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csi.rsp
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.AppContext.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Console.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.Compression.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.Pipes.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.AccessControl.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Claims.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.ValueTuple.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.XPath.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\vbc.exe
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\vbc.exe.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\vbc.rsp
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Antlr3.Runtime.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.DependencyCollector.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.Web.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.WindowsServer.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.ApplicationInsights.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Google.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Newtonsoft.Json.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Owin.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Net.Http.Formatting.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Helpers.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.Owin.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.WebHost.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Mvc.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Optimization.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Razor.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Deployment.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Razor.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\WebGrease.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Newtonsoft.Json.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Net.Http.Formatting.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Helpers.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.WebHost.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Mvc.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Optimization.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Razor.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Deployment.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Razor.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Antlr3.Runtime.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Google.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.Owin.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.DependencyCollector.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.WindowsServer.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.Web.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\VMD.RESTApiResponseWrapper.Net.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessServices.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Interfaces.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\UnitOfWork.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\GenericRepository.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\AutoMapper.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Resolver.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.ValueTuple.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.ServiceLocation.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessEntities.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessServices.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Interfaces.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\UnitOfWork.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\UnitOfWork.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\GenericRepository.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\GenericRepository.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\DataBase.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\AutoMapper.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\AutoMapper.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Resolver.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\System.ValueTuple.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.ServiceLocation.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\MapperUtility.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\MapperUtility.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessServices.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Unity.Mvc3.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Unity.WebApi.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Resolver.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\NLog.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\AkshaakWebAPI\bin\NLog.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\ApplicationInsights.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\AkshaakWebAPI.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\AkshaakWebAPI.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\AkshaakWebAPI.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csc.exe
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csc.exe.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csc.rsp
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csi.exe
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csi.exe.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\csi.rsp
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.AppContext.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Console.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.IO.Pipes.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Claims.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.ValueTuple.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\vbc.exe
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\vbc.exe.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\vbc.rsp
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Antlr3.Runtime.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessServices.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Interfaces.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\MapperUtility.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.Web.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Newtonsoft.Json.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\NLog.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Owin.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Resolver.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Helpers.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.Owin.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.WebHost.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Mvc.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Optimization.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Razor.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Razor.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Unity.Mvc3.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Unity.WebApi.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\VMD.RESTApiResponseWrapper.Net.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\WebGrease.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\UnitOfWork.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\GenericRepository.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\AutoMapper.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.ValueTuple.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessServices.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\BusinessServices.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Interfaces.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\MapperUtility.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Resolver.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Resolver.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Newtonsoft.Json.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\NLog.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Helpers.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.WebHost.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Mvc.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Razor.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.WebPages.Razor.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Antlr3.Runtime.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Web.Http.Owin.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.AI.Web.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\UnitOfWork.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\UnitOfWork.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\DataBase.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\GenericRepository.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\GenericRepository.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\AutoMapper.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\AutoMapper.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\bin\System.ValueTuple.xml
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.csproj.CopyComplete
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.dll
+C:\Users\user\Desktop\AkshaakWebAPI\AkshaakWebAPI\obj\Debug\AkshaakWebAPI.pdb

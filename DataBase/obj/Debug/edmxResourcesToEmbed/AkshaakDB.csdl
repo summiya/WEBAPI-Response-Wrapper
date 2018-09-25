@@ -1,0 +1,1625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AkShaakModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminRegistration">
+    <Key>
+      <PropertyRef Name="admRegID" />
+    </Key>
+    <Property Name="admRegID" Type="Guid" Nullable="false" />
+    <Property Name="admRegFirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admRegLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admRegImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admRegDOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="admRegCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="admRegCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admRegModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="admRegModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="admRegIsDeleted" Type="Boolean" />
+    <Property Name="admRegIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="Attribute">
+    <Key>
+      <PropertyRef Name="attID" />
+    </Key>
+    <Property Name="attID" Type="Guid" Nullable="false" />
+    <Property Name="attName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attPosition" Type="Int32" />
+    <Property Name="attSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="attCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="attModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attIsDeleted" Type="Boolean" />
+    <Property Name="attIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="AttributesOption">
+    <Key>
+      <PropertyRef Name="attOptID" />
+    </Key>
+    <Property Name="attOptID" Type="Guid" Nullable="false" />
+    <Property Name="attID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="attOptName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attOptDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="attOptImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attOptQuantity" Type="Boolean" />
+    <Property Name="attOptPrice" Type="Boolean" />
+    <Property Name="attOptPosition" Type="Int32" />
+    <Property Name="attOptSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attOptType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attOptCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="attOptCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attOptModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="attOptModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="attOptIsDeleted" Type="Boolean" />
+    <Property Name="attOptIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Badge">
+    <Key>
+      <PropertyRef Name="BadgeId" />
+    </Key>
+    <Property Name="BadgeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BadgeName" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="BadgeDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Image" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="DateTime" Precision="3" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CartWhishlistFavroty">
+    <Key>
+      <PropertyRef Name="carWhiFavID" />
+    </Key>
+    <Property Name="carWhiFavID" Type="Guid" Nullable="false" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proID" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="invVarID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="carWhiFavQty" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="carWhiFavType" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="carDeliveryType" Type="Int32" />
+    <Property Name="cusCarInfCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusCarInfCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="catID" />
+    </Key>
+    <Property Name="catID" Type="Guid" Nullable="false" />
+    <Property Name="catName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="catDescriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="catImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catParentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="catPosition" Type="Int32" />
+    <Property Name="catLevel" Type="Int32" />
+    <Property Name="catChildrenCount" Type="Int32" />
+    <Property Name="catSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="catCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="catModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catIsDeleted" Type="Boolean" />
+    <Property Name="catIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CategoryMapping">
+    <Key>
+      <PropertyRef Name="catMapID" />
+    </Key>
+    <Property Name="catMapID" Type="Guid" Nullable="false" />
+    <Property Name="catID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="catMapCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="catMapCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catMapModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="catMapModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="catMapIsDeleted" Type="Boolean" />
+    <Property Name="catMapIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CDeliveryDetail">
+    <Key>
+      <PropertyRef Name="cDeliveryID" />
+    </Key>
+    <Property Name="cDeliveryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cdelOrderID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cdelOrderdetID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cdelStoreID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cdelStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="cdelCarryID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cdelError" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="cdelCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="cdelCreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="cdelCreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="citID" />
+    </Key>
+    <Property Name="citID" Type="Guid" Nullable="false" />
+    <Property Name="staID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="citName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="citNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="citCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="citCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="citModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="citModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="citIsDeleted" Type="Boolean" />
+    <Property Name="citIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CityArea">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="Guid" Nullable="false" />
+    <Property Name="CityID" Type="Guid" />
+    <Property Name="AddrAreaNameEn" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="AddrAreaNameAr" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ContactUsEmail">
+    <Key>
+      <PropertyRef Name="contactUsID" />
+    </Key>
+    <Property Name="contactUsID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="contactUsName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="contactUsEmail1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="contactUsMobileNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="contactUsMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="contactUsCreatedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="couID" />
+    </Key>
+    <Property Name="couID" Type="Guid" Nullable="false" />
+    <Property Name="couCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="couName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="couNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="couIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="couCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="couCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="couModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="couModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="couIsDeleted" Type="Boolean" />
+    <Property Name="couIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="curID" />
+    </Key>
+    <Property Name="curID" Type="Guid" Nullable="false" />
+    <Property Name="curCountryName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curCountryNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="curName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="curCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="curModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="curIsDeleted" Type="Boolean" />
+    <Property Name="curIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CustomerAddress">
+    <Key>
+      <PropertyRef Name="cusAddID" />
+    </Key>
+    <Property Name="cusAddID" Type="Guid" Nullable="false" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="citID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddBVType" Type="Int32" />
+    <Property Name="cusAddCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddState" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddZipcode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddBuilding" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddAptNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddLongitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddLatitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddStreet" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddFloor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddFirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddMobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusAddCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusAddModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddIsDeleted" Type="Boolean" />
+    <Property Name="cusAddIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="CustomerCardInfo">
+    <Key>
+      <PropertyRef Name="cusCarInfID" />
+    </Key>
+    <Property Name="cusCarInfID" Type="Guid" Nullable="false" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfCardNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfCardName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfExpMonth" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfExpYear" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusCarInfCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfModifieOn" Type="DateTime" Precision="3" />
+    <Property Name="cusCarInfModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusCarInfIsDeleted" Type="Boolean" />
+    <Property Name="cusCarInfIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="cusID" />
+    </Key>
+    <Property Name="cusID" Type="Guid" Nullable="false" />
+    <Property Name="natID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="resID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusFirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusDOB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusGender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusIsGuest" Type="Boolean" />
+    <Property Name="cusIsDeleted" Type="Boolean" />
+    <Property Name="cusIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="DEDMaster">
+    <Key>
+      <PropertyRef Name="dedID" />
+    </Key>
+    <Property Name="dedID" Type="Guid" Nullable="false" />
+    <Property Name="dedName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dedCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="dedCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dedModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="dedModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dedIsDeleted" Type="Boolean" />
+    <Property Name="dedIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Discount">
+    <Key>
+      <PropertyRef Name="disID" />
+    </Key>
+    <Property Name="disID" Type="Guid" Nullable="false" />
+    <Property Name="disName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="disType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="disValue" Type="Double" />
+    <Property Name="disCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="disCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="disModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="disModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="disIsDeleted" Type="Boolean" />
+    <Property Name="disIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="EmailSetting">
+    <Key>
+      <PropertyRef Name="settingId" />
+    </Key>
+    <Property Name="settingId" Type="Guid" Nullable="false" />
+    <Property Name="smtpHost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="smtpPort" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="smtpEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="smtpPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="smtpSSL" Type="Boolean" />
+    <Property Name="smsUsername" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="smsPassword" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="smsLink" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="smsApiKey" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="smtpCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="smtpCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="smtpModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="smtpModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ExchangeReturnPol">
+    <Key>
+      <PropertyRef Name="excRetPolID" />
+    </Key>
+    <Property Name="excRetPolID" Type="Guid" Nullable="false" />
+    <Property Name="excRetPolName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="excRetPolNameAr" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="excRetPolCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="excRetPolCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="excRetPolModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="excRetPolModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="excRetPolIsDeleted" Type="Boolean" />
+    <Property Name="excRetPolIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ExchangeReturnTime">
+    <Key>
+      <PropertyRef Name="excRetTimID" />
+    </Key>
+    <Property Name="excRetTimID" Type="Guid" Nullable="false" />
+    <Property Name="excRetPolID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="excRetTimName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="excRetTimNameAr" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="excRetTimDays" Type="Int32" />
+    <Property Name="excRetTimCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="excRetTimCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="excRetTimModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="excRetTimModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="excRetTimIsDeleted" Type="Boolean" />
+    <Property Name="excRetTimIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="InventoryProduct">
+    <Key>
+      <PropertyRef Name="invProID" />
+    </Key>
+    <Property Name="invProID" Type="Guid" Nullable="false" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invProStockQty" Type="Double" />
+    <Property Name="invProSalesQty" Type="Double" />
+    <Property Name="invProReturnedQty" Type="Double" />
+    <Property Name="invProDamagedQty" Type="Double" />
+    <Property Name="invProToOSQty" Type="Double" />
+    <Property Name="invProMinCartQty" Type="Double" />
+    <Property Name="invProMaxCartQty" Type="Double" />
+    <Property Name="invProMaxNotifQty" Type="Double" />
+    <Property Name="invProCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="invProCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="invProModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="invProModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="invProIsDeleted" Type="Boolean" />
+    <Property Name="invProIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="InventoryProductLog">
+    <Key>
+      <PropertyRef Name="invProLogID" />
+    </Key>
+    <Property Name="invProLogID" Type="Guid" Nullable="false" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invProLogType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invVarID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invProLogQty" Type="Double" />
+    <Property Name="invProLogDate" Type="DateTime" Precision="3" />
+    <Property Name="invProLogCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="invProLogCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="invProLogModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="invProLogModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="invProLogIsDeleted" Type="Boolean" />
+    <Property Name="invProLogIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="InventoryVariant">
+    <Key>
+      <PropertyRef Name="invVarID" />
+    </Key>
+    <Property Name="invVarID" Type="Guid" Nullable="false" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proConID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invVarQty" Type="Double" />
+    <Property Name="invVarPerDayQty" Type="Double" />
+    <Property Name="invVarPrice" Type="Double" />
+    <Property Name="invVarDisValue" Type="Double" />
+    <Property Name="invVarDisAmount" Type="Double" />
+    <Property Name="invVarFinalAmount" Type="Double" />
+    <Property Name="invVarCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="invVarCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="invVarModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="invVarModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="invVarIsDeleted" Type="Boolean" />
+    <Property Name="invVarIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="Guid" Nullable="false" />
+    <Property Name="InvoiceNo" Type="Int32" Nullable="false" />
+    <Property Name="invOrderID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invStoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invCreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="invCreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="invModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invIsActive" Type="Boolean" />
+    <Property Name="invIsDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="lanID" />
+    </Key>
+    <Property Name="lanID" Type="Guid" Nullable="false" />
+    <Property Name="lanCode" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Name="lanName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lanNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lanIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="lanIsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="cusLogID" />
+    </Key>
+    <Property Name="cusLogID" Type="Guid" Nullable="false" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusLogEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusLogMobile" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cusLogType" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="cusLogIsOnline" Type="Boolean" />
+    <Property Name="cusLogIsVerified" Type="Boolean" />
+    <Property Name="cusOTP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="cusLogCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusLogModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="cusLogIsDeleted" Type="Boolean" />
+    <Property Name="cusLogIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MailTemplateContent">
+    <Key>
+      <PropertyRef Name="mailerCode" />
+    </Key>
+    <Property Name="mailerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="subjectEN" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="bodyEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="smsEN" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="subjectAR" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="bodyAR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="smsAR" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="MenuMapping">
+    <Key>
+      <PropertyRef Name="menMapID" />
+    </Key>
+    <Property Name="menMapID" Type="Guid" Nullable="false" />
+    <Property Name="rolID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="menID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="menMapCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="menMapCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="menMapModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="menMapModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="menMapIsDeleted" Type="Boolean" />
+    <Property Name="menMapIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="menID" />
+    </Key>
+    <Property Name="menID" Type="Guid" Nullable="false" />
+    <Property Name="menName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="menLink" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="menIcon" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="menParentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="menCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="menCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="menModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="menModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="menIsDeleted" Type="Boolean" />
+    <Property Name="menIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Merchant">
+    <Key>
+      <PropertyRef Name="merID" />
+    </Key>
+    <Property Name="merID" Type="Guid" Nullable="false" />
+    <Property Name="natID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="resID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merFirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merLastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merDesignation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merDob" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merGender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merLogTyp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merLogTypID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merIsVerified" Type="Boolean" />
+    <Property Name="merStoreCount" Type="Int32" />
+    <Property Name="merCatCount" Type="Int32" />
+    <Property Name="merProCount" Type="Int32" />
+    <Property Name="merPayment" Type="Boolean" />
+    <Property Name="pacID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merPlanDate" Type="DateTime" Precision="3" />
+    <Property Name="merPlanRenewalDate" Type="DateTime" Precision="3" />
+    <Property Name="merCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="merCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="merModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merIsDeleted" Type="Boolean" />
+    <Property Name="merIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MerchantAddress">
+    <Key>
+      <PropertyRef Name="merAddID" />
+    </Key>
+    <Property Name="merAddID" Type="Guid" Nullable="false" />
+    <Property Name="merID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merAddAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="merAddCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddState" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddZipcode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merAddBuildingNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddAptNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddLandMark" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="merAddCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="merAddModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merAddIsDeleted" Type="Boolean" />
+    <Property Name="merAddIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MerchantBankDetail">
+    <Key>
+      <PropertyRef Name="merBanDetID" />
+    </Key>
+    <Property Name="merBanDetID" Type="Guid" Nullable="false" />
+    <Property Name="merID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetAccountName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetBankName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetBranchName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetIBANNo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetSWIFTCode" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="merBanDetCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="merBanDetModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merBanDetIsDeleted" Type="Boolean" />
+    <Property Name="merBanDetIsActive" Type="Boolean" />
+    <Property Name="merBanAlternativePay" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MerchantCardInfo">
+    <Key>
+      <PropertyRef Name="merCarInfID" />
+    </Key>
+    <Property Name="merCarInfID" Type="Guid" Nullable="false" />
+    <Property Name="merID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfCardNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfCardName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfExpMonth" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfExpYear" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="merCarInfCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="merCarInfModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="merCarInfIsDeleted" Type="Boolean" />
+    <Property Name="merCarInfIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MessagesMain">
+    <Key>
+      <PropertyRef Name="mesID" />
+    </Key>
+    <Property Name="mesID" Type="Guid" Nullable="false" />
+    <Property Name="mesSubject" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="mesDetail" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="mesTo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesCreatedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesTypeID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesIsActive" Type="Boolean" />
+    <Property Name="mesIsRead" Type="Boolean" />
+    <Property Name="mesIsReadMer" Type="Boolean" />
+    <Property Name="mesOrderNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="MessageThread">
+    <Key>
+      <PropertyRef Name="mesThreadID" />
+    </Key>
+    <Property Name="mesThreadID" Type="Guid" Nullable="false" />
+    <Property Name="mesID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesThreadDetail" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="mesThreadBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesThreadCreatedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesThreadOrderNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Nationality">
+    <Key>
+      <PropertyRef Name="natID" />
+    </Key>
+    <Property Name="natID" Type="Guid" Nullable="false" />
+    <Property Name="natName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="natNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="natCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="natCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="natModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="natModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="natIsDeleted" Type="Boolean" />
+    <Property Name="natIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="NGOMaster">
+    <Key>
+      <PropertyRef Name="ngoID" />
+    </Key>
+    <Property Name="ngoID" Type="Guid" Nullable="false" />
+    <Property Name="ngoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ngoNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ngoImgName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ngoCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ngoCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ngoModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ngoModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ngoIsDeleted" Type="Boolean" />
+    <Property Name="ngoIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="OfferType">
+    <Key>
+      <PropertyRef Name="offTypID" />
+    </Key>
+    <Property Name="offTypID" Type="Guid" Nullable="false" />
+    <Property Name="offTypName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="offTypCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="offTypCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="offTypModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="offTypModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="offTypIsDeleted" Type="Boolean" />
+    <Property Name="offTypIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="ordDetID" />
+    </Key>
+    <Property Name="ordDetID" Type="Guid" Nullable="false" />
+    <Property Name="ordID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="invVarID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetPriceOriginalPrice" Type="Double" />
+    <Property Name="ordDetPriceOriginalDisPrice" Type="Double" />
+    <Property Name="ordDetProPrice" Type="Double" />
+    <Property Name="ordDetProQty" Type="Double" />
+    <Property Name="ordDetTotalPrice" Type="Double" />
+    <Property Name="ordDetWingRefNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordPickUp" Type="Boolean" />
+    <Property Name="ordDetProDiscount" Type="Double" />
+    <Property Name="ordDetcusAddrID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetPaymentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetSubTotal" Type="Double" />
+    <Property Name="ordDetDisTotal" Type="Double" />
+    <Property Name="ordDetFinalTotal" Type="Double" />
+    <Property Name="ordDetProDefaultPrice" Type="Double" />
+    <Property Name="ordDetStoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordDetCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordDetModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetStatus" Type="Int32" />
+    <Property Name="ordDetIsDeleted" Type="Boolean" />
+    <Property Name="ordDetIsActive" Type="Boolean" />
+    <Property Name="ordPersonalDel" Type="Boolean" />
+    <Property Name="ordDelCharges" Type="Double" />
+    <Property Name="ordDelChargeOriginal" Type="Double" />
+    <Property Name="ordDetDelNote" Type="String" MaxLength="3000" FixedLength="false" Unicode="true" />
+    <Property Name="ordDetWingCorTyp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDeliveryType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="OrderDiscountDetail">
+    <Key>
+      <PropertyRef Name="ordDisDetID" />
+    </Key>
+    <Property Name="ordDisDetID" Type="Guid" Nullable="false" />
+    <Property Name="ordID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDisDetCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordDisDetCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordDisDetModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordDisDetModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordDisDetIsDeleted" Type="Boolean" />
+    <Property Name="ordDisDetIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="ordID" />
+    </Key>
+    <Property Name="ordID" Type="Guid" Nullable="false" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusAddID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payTypID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="delMapID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDatetime" Type="DateTime" Precision="3" />
+    <Property Name="ordStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDeliveryType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordDeliveryTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordCancelRemark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ordSubTotal" Type="Double" />
+    <Property Name="ordTotalDiscount" Type="Double" />
+    <Property Name="ordDeliveryCharges" Type="Double" />
+    <Property Name="ordTotalTax" Type="Double" />
+    <Property Name="ordCreditPayment" Type="Double" />
+    <Property Name="ordCashPayment" Type="Double" />
+    <Property Name="ordGrandTotal" Type="Double" />
+    <Property Name="ordOfferCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordPaymentStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordFrom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordSignature" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordTaxPer" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="ordCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordIsDeleted" Type="Boolean" />
+    <Property Name="ordIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="OrdersPayment">
+    <Key>
+      <PropertyRef Name="ordPayID" />
+    </Key>
+    <Property Name="ordPayID" Type="Guid" Nullable="false" />
+    <Property Name="ordID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordPayTransactionID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordPayTransactionNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordPayTransactionStatus" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="ordPayAmount" Type="Double" />
+    <Property Name="ordPayCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordPayCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordPayModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ordPayModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ordPayIsDeleted" Type="Boolean" />
+    <Property Name="ordPayIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="OrderStatusMast">
+    <Key>
+      <PropertyRef Name="ordStatusID" />
+    </Key>
+    <Property Name="ordStatusID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ordStatusName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordStatusNameAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordStatusIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="pacID" />
+    </Key>
+    <Property Name="pacID" Type="Guid" Nullable="false" />
+    <Property Name="pacName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pacDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pacStoresCount" Type="Int32" />
+    <Property Name="pacCategoriesCount" Type="Int32" />
+    <Property Name="pacProductCount" Type="Int32" />
+    <Property Name="pacPrice" Type="Double" />
+    <Property Name="pacType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="taxID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pacTaxValue" Type="Double" />
+    <Property Name="pacTaxAmount" Type="Double" />
+    <Property Name="disID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="pacDisValue" Type="Double" />
+    <Property Name="pacDisAmount" Type="Double" />
+    <Property Name="pacFinalPrice" Type="Double" />
+    <Property Name="pacCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="pacCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="pacModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="pacModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="pacIsDeleted" Type="Boolean" />
+    <Property Name="pacIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PaymentsInfo">
+    <Key>
+      <PropertyRef Name="payInfID" />
+    </Key>
+    <Property Name="payInfID" Type="Guid" Nullable="false" />
+    <Property Name="merID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payTypID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payInfTransactionNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payInfTransactionStatus" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payInfDate" Type="DateTime" Precision="3" />
+    <Property Name="payInfPrice" Type="Double" />
+    <Property Name="payInfTaxAmount" Type="Double" />
+    <Property Name="payInfDisAmount" Type="Double" />
+    <Property Name="payInfFinalPrice" Type="Double" />
+    <Property Name="payInfCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="payinfCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payInfModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="payInfModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payInfIsDeleted" Type="Boolean" />
+    <Property Name="payInfIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="PaymentType">
+    <Key>
+      <PropertyRef Name="payTypID" />
+    </Key>
+    <Property Name="payTypID" Type="Guid" Nullable="false" />
+    <Property Name="payTypName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payTypNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payTypDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="payTypDescriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="payTypIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payTypCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="payTypCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payTypModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="payTypModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="payTypIsDeleted" Type="Boolean" />
+    <Property Name="payTypIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Product_Badges">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ProductId" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="BadgeId" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Priority" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ProductContain">
+    <Key>
+      <PropertyRef Name="proConID" />
+    </Key>
+    <Property Name="proConID" Type="Guid" Nullable="false" />
+    <Property Name="catID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proConName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proConNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proConSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proConDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proConIcon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proSortNo" Type="Int32" />
+    <Property Name="proConCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="proConCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proConModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="proConModifedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proConIsDeleted" Type="Boolean" />
+    <Property Name="proConIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ProductContainsMapping">
+    <Key>
+      <PropertyRef Name="proConMapID" />
+    </Key>
+    <Property Name="proConMapID" Type="Guid" Nullable="false" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proConID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proConMapCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="proConMapCreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductGallary">
+    <Key>
+      <PropertyRef Name="proGalID" />
+    </Key>
+    <Property Name="proGalID" Type="Guid" Nullable="false" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proGalImgName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proGalCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="proGalCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proGalModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="proGalModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proGalIsDeleted" Type="Boolean" />
+    <Property Name="proGalIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ProductionTime">
+    <Key>
+      <PropertyRef Name="prodTimID" />
+    </Key>
+    <Property Name="prodTimID" Type="Guid" Nullable="false" />
+    <Property Name="prodTimName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prodTimNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prodTimDays" Type="Int32" />
+    <Property Name="prodTimCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="prodTimCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prodTimModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="prodTimModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="prodTimIsDeleted" Type="Boolean" />
+    <Property Name="prodTimIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ProductKeyword">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="KeywordEn" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ProductKeywordsArabic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="KeywordAr" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="proID" />
+    </Key>
+    <Property Name="proID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="catID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoTaxID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proNameArb" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="proDescriptionArb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proDefaultPrice" Type="Double" />
+    <Property Name="proAvailableQty" Type="Double" />
+    <Property Name="proPerDayQty" Type="Double" />
+    <Property Name="prodTimID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proMetaKeyword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proMetaKeywordArb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proMetaDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proMetaDescriptionArb" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proHideFromShop" Type="Boolean" />
+    <Property Name="excRetTimID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proBuyResShipCost" Type="Boolean" />
+    <Property Name="proIamResShipCost" Type="Boolean" />
+    <Property Name="proDisValue" Type="Double" />
+    <Property Name="proDisAmount" Type="Double" />
+    <Property Name="proFinalAmount" Type="Double" />
+    <Property Name="proIsRecomemded" Type="Boolean" />
+    <Property Name="proWeight" Type="Int32" />
+    <Property Name="proIsPopular" Type="Boolean" />
+    <Property Name="proIsSubmitted" Type="Boolean" />
+    <Property Name="proIsApproved" Type="Boolean" />
+    <Property Name="proCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="proCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="proModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proIsDeleted" Type="Boolean" />
+    <Property Name="proIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Rating">
+    <Key>
+      <PropertyRef Name="ratID" />
+    </Key>
+    <Property Name="ratID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ratRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ratValue" Type="Int32" Nullable="false" />
+    <Property Name="ratDate" Type="DateTime" Precision="3" />
+    <Property Name="ratCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ratCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ratModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ratModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ratIsDeleted" Type="Boolean" />
+    <Property Name="ratIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="RatingProduct">
+    <Key>
+      <PropertyRef Name="proRatID" />
+    </Key>
+    <Property Name="proRatID" Type="Guid" Nullable="false" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proRatRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="proRatValue" Type="Int32" />
+    <Property Name="proRatDate" Type="DateTime" Precision="3" />
+    <Property Name="proRatCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="proRatCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proRatModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="proRatModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="proRatIsDeleted" Type="Boolean" />
+    <Property Name="proRatIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Resident">
+    <Key>
+      <PropertyRef Name="resID" />
+    </Key>
+    <Property Name="resID" Type="Guid" Nullable="false" />
+    <Property Name="resName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="resNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="resCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="resCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="resModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="resModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="resIsDeleted" Type="Boolean" />
+    <Property Name="resIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="rolID" />
+    </Key>
+    <Property Name="rolID" Type="Guid" Nullable="false" />
+    <Property Name="rolName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rolCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="rolCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rolModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="rolModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rolIsDeleted" Type="Boolean" />
+    <Property Name="rolIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="RolesMapping">
+    <Key>
+      <PropertyRef Name="rolMapID" />
+    </Key>
+    <Property Name="rolMapID" Type="Guid" Nullable="false" />
+    <Property Name="admRegID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rolID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rolMapCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="rolMapCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rolMapModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="rolMapModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rolMapIsDeleted" Type="Boolean" />
+    <Property Name="rolMapIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ShopCategory">
+    <Key>
+      <PropertyRef Name="shoCatID" />
+    </Key>
+    <Property Name="shoCatID" Type="Guid" Nullable="false" />
+    <Property Name="shoCatName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatDescriptionAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatParentID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatPosition" Type="Int32" />
+    <Property Name="shoCatLevel" Type="Int32" />
+    <Property Name="shoCatChildrenCount" Type="Int32" />
+    <Property Name="shoCatSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="shoCatCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="shoCatModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatIsDeleted" Type="Boolean" />
+    <Property Name="shoCatIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ShopCategoryMapping">
+    <Key>
+      <PropertyRef Name="shoCatMapID" />
+    </Key>
+    <Property Name="shoCatMapID" Type="Guid" Nullable="false" />
+    <Property Name="shoCatID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatMapCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="shoCatMapCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatMapModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="shoCatMapModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatMapIsDeleted" Type="Boolean" />
+    <Property Name="shoCatMapIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SocialMedia">
+    <Key>
+      <PropertyRef Name="socMedID" />
+    </Key>
+    <Property Name="socMedID" Type="Guid" Nullable="false" />
+    <Property Name="socMedMasID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socMedName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="socMedCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="socMedModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedIsDeleted" Type="Boolean" />
+    <Property Name="socMedIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SocialMediaMaster">
+    <Key>
+      <PropertyRef Name="socMedMasID" />
+    </Key>
+    <Property Name="socMedMasID" Type="Guid" Nullable="false" />
+    <Property Name="socMedMasName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedMasNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedMasIcon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="socMedCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="socMedModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="socMedMasIsDeleted" Type="Boolean" />
+    <Property Name="socMedMasIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Sponsor">
+    <Key>
+      <PropertyRef Name="spoID" />
+    </Key>
+    <Property Name="spoID" Type="Guid" Nullable="false" />
+    <Property Name="spoName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spoDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="spoImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="spoLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="spoSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="spoCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="spoCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="spoModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="spoModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="spoIsDeleted" Type="Boolean" />
+    <Property Name="spoIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StoreAddress">
+    <Key>
+      <PropertyRef Name="stoAddID" />
+    </Key>
+    <Property Name="stoAddID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="citID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoBVType" Type="Int32" />
+    <Property Name="stoAddCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddState" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddZipcode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddArea" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="StoAddBuilding" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddAptNo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddLongitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddLatitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddStreet" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddFloor" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddShowMyLoc" Type="Boolean" />
+    <Property Name="stoAddAvailablePikup" Type="Boolean" />
+    <Property Name="stoAddCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoAddCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoAddModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAddIsDeleted" Type="Boolean" />
+    <Property Name="stoAddIsActive" Type="Boolean" />
+    <Property Name="stoPersonalDelAvl" Type="Boolean" />
+    <Property Name="stoPersonalDelCitID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StoreDeliveryMapping">
+    <Key>
+      <PropertyRef Name="stoDelMapID" />
+    </Key>
+    <Property Name="stoDelMapID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="citID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoDelMapAmt" Type="Double" />
+    <Property Name="stoDelIsEnabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StoreFavroty">
+    <Key>
+      <PropertyRef Name="stoFavID" />
+    </Key>
+    <Property Name="stoFavID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cusID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoFavCreatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="StoreLicense">
+    <Key>
+      <PropertyRef Name="stoLicID" />
+    </Key>
+    <Property Name="stoLicID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicEmirateIDName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicEmiratesIDNumber" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicEmiratesExpirydate" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicETraderLicenseNumber" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicETraderLicenseExpirydate" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicETraderRegisteredActivity" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoLicCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoLicModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoLicIsActive" Type="Boolean" />
+    <Property Name="stoLicIsDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StoreOffre">
+    <Key>
+      <PropertyRef Name="stoOffID" />
+    </Key>
+    <Property Name="stoOffID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="offTypID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="proID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffImg" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffExtInt" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffFromDate" Type="DateTime" Precision="3" />
+    <Property Name="stoOffToDate" Type="DateTime" Precision="3" />
+    <Property Name="stoOffDiscount" Type="Double" />
+    <Property Name="stoOffMinAmt" Type="Double" />
+    <Property Name="stoOffMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffOrderCount" Type="Int32" />
+    <Property Name="stoOffCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoOffCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoOffModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoOffIsDeleted" Type="Boolean" />
+    <Property Name="stoOffIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StorePaymentType">
+    <Key>
+      <PropertyRef Name="stoPayTypID" />
+    </Key>
+    <Property Name="stoPayTypID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="payTypID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoPayTypCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoPayTypCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoPayTypModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoPayTypModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoPayTypIsDeleted" Type="Boolean" />
+    <Property Name="stoPayTypIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="stoID" />
+    </Key>
+    <Property Name="stoID" Type="Guid" Nullable="false" />
+    <Property Name="merID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="curID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="couID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="shoCatID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lanID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lanIDArb" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoArbName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoArbDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoEmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoContactNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoOwnerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoImgName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoLogo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoBgImgName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAdminEmails" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoAdminCCEmails" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoSMTPEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoSMTPPassword" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoSMTPPort" Type="Int32" />
+    <Property Name="stoSMTPSSL" Type="Boolean" />
+    <Property Name="stoSeoName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoApproved" Type="Boolean" />
+    <Property Name="stoPublished" Type="Boolean" />
+    <Property Name="stoInventory" Type="Boolean" />
+    <Property Name="stoTimeZone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoMetaKeyword" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoMetaDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoModifiedOn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoIsDeleted" Type="Boolean" />
+    <Property Name="stoIsActive" Type="Boolean" />
+    <Property Name="stoIsClosed" Type="Boolean" />
+    <Property Name="stoShopPolicies" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="stoDeliveryCharges" Type="Double" />
+    <Property Name="stoShopStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoStartDate" Type="DateTime" Precision="3" />
+    <Property Name="stoEndDate" Type="DateTime" Precision="3" />
+    <Property Name="stoStartTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoEndTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoIsAcceptOrder" Type="Boolean" />
+    <Property Name="stoCheckoutdisable" Type="Boolean" />
+    <Property Name="ngoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StoresDiscount">
+    <Key>
+      <PropertyRef Name="stoDisID" />
+    </Key>
+    <Property Name="stoDisID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisValue" Type="Double" />
+    <Property Name="stoDisIsDefault" Type="Boolean" />
+    <Property Name="stoDisFromDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisToDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoDisCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoDisModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoDisIsDeleted" Type="Boolean" />
+    <Property Name="stoDisIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StoresGallary">
+    <Key>
+      <PropertyRef Name="stoGalID" />
+    </Key>
+    <Property Name="stoGalID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoGalImgName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoGalCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoGalCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoGalModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoGalModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoGalIsDeleted" Type="Boolean" />
+    <Property Name="stoGalIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StoresTax">
+    <Key>
+      <PropertyRef Name="stoTaxID" />
+    </Key>
+    <Property Name="stoTaxID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoTaxName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTaxType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTaxValue" Type="Double" />
+    <Property Name="stoTaxIsDefault" Type="Boolean" />
+    <Property Name="stoTaxCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoTaxCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTaxModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoTaxModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTaxIsDeleted" Type="Boolean" />
+    <Property Name="stoTaxIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StoreTiming">
+    <Key>
+      <PropertyRef Name="stoTimID" />
+    </Key>
+    <Property Name="stoTimID" Type="Guid" Nullable="false" />
+    <Property Name="stoID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="stoTimDayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTimOpeningTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTimClosingTime" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTimCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoTimCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTimModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="stoTimModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="stoTimIsDeleted" Type="Boolean" />
+    <Property Name="stoTimIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SuperAdminLogin">
+    <Key>
+      <PropertyRef Name="supAdmLogID" />
+    </Key>
+    <Property Name="supAdmLogID" Type="Guid" Nullable="false" />
+    <Property Name="supAdmLogUserName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="supAdmLogPassword" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="supAdmLogCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="supAdmLogCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="supAdmLogModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="supAdmLogModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="supAdmLogIsDeleted" Type="Boolean" />
+    <Property Name="supAdmLogIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Tax">
+    <Key>
+      <PropertyRef Name="taxID" />
+    </Key>
+    <Property Name="taxID" Type="Guid" Nullable="false" />
+    <Property Name="taxName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="taxType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="taxValue" Type="Double" />
+    <Property Name="taxCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="taxCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="taxModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="taxModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="taxIsDeleted" Type="Boolean" />
+    <Property Name="taxIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TrackingAramex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="AramexID" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OrderDetailID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MerchantId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OrderID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FileURL" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="IsEmailSent" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TrackOrder">
+    <Key>
+      <PropertyRef Name="traOrdID" />
+    </Key>
+    <Property Name="traOrdID" Type="Guid" Nullable="false" />
+    <Property Name="ordDetID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ordStaID" Type="Int32" />
+    <Property Name="traOrdText" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="traOrdDate" Type="DateTime" Precision="3" />
+    <Property Name="traOrdCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="traOrdCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="traOrdModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="traOrdModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="traOrdIsDeleted" Type="Boolean" />
+    <Property Name="traOrdIsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="WeekDay">
+    <Key>
+      <PropertyRef Name="weeDayID" />
+    </Key>
+    <Property Name="weeDayID" Type="Guid" Nullable="false" />
+    <Property Name="weeDayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="weeDayNameAr" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="weeDayCreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="weeDayCreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="weeDayModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="weeDayModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="weeDayIsDeleted" Type="Boolean" />
+    <Property Name="weeDayIsActive" Type="Boolean" />
+    <Property Name="weeDaySort" Type="Int32" />
+  </EntityType>
+  <EntityType Name="WingWeight">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="weightkg" Type="Int32" Nullable="false" />
+    <Property Name="weighttext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="weighttextAr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="AkShaakEntitiesDB" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AdminRegistrations" EntityType="Self.AdminRegistration" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="Attributes" EntityType="Self.Attribute" />
+    <EntitySet Name="AttributesOptions" EntityType="Self.AttributesOption" />
+    <EntitySet Name="Badges" EntityType="Self.Badge" />
+    <EntitySet Name="CartWhishlistFavroties" EntityType="Self.CartWhishlistFavroty" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="CategoryMappings" EntityType="Self.CategoryMapping" />
+    <EntitySet Name="CDeliveryDetails" EntityType="Self.CDeliveryDetail" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="CityAreas" EntityType="Self.CityArea" />
+    <EntitySet Name="ContactUsEmails" EntityType="Self.ContactUsEmail" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Currencies" EntityType="Self.Currency" />
+    <EntitySet Name="CustomerAddresses" EntityType="Self.CustomerAddress" />
+    <EntitySet Name="CustomerCardInfoes" EntityType="Self.CustomerCardInfo" />
+    <EntitySet Name="Customers" EntityType="Self.Customer" />
+    <EntitySet Name="DEDMasters" EntityType="Self.DEDMaster" />
+    <EntitySet Name="Discounts" EntityType="Self.Discount" />
+    <EntitySet Name="EmailSettings" EntityType="Self.EmailSetting" />
+    <EntitySet Name="ExchangeReturnPols" EntityType="Self.ExchangeReturnPol" />
+    <EntitySet Name="ExchangeReturnTimes" EntityType="Self.ExchangeReturnTime" />
+    <EntitySet Name="InventoryProducts" EntityType="Self.InventoryProduct" />
+    <EntitySet Name="InventoryProductLogs" EntityType="Self.InventoryProductLog" />
+    <EntitySet Name="InventoryVariants" EntityType="Self.InventoryVariant" />
+    <EntitySet Name="Invoices" EntityType="Self.Invoice" />
+    <EntitySet Name="Languages" EntityType="Self.Language" />
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="MailTemplateContents" EntityType="Self.MailTemplateContent" />
+    <EntitySet Name="MenuMappings" EntityType="Self.MenuMapping" />
+    <EntitySet Name="Menus" EntityType="Self.Menu" />
+    <EntitySet Name="Merchants" EntityType="Self.Merchant" />
+    <EntitySet Name="MerchantAddresses" EntityType="Self.MerchantAddress" />
+    <EntitySet Name="MerchantBankDetails" EntityType="Self.MerchantBankDetail" />
+    <EntitySet Name="MerchantCardInfoes" EntityType="Self.MerchantCardInfo" />
+    <EntitySet Name="MessagesMains" EntityType="Self.MessagesMain" />
+    <EntitySet Name="MessageThreads" EntityType="Self.MessageThread" />
+    <EntitySet Name="Nationalities" EntityType="Self.Nationality" />
+    <EntitySet Name="NGOMasters" EntityType="Self.NGOMaster" />
+    <EntitySet Name="OfferTypes" EntityType="Self.OfferType" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetail" />
+    <EntitySet Name="OrderDiscountDetails" EntityType="Self.OrderDiscountDetail" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="OrdersPayments" EntityType="Self.OrdersPayment" />
+    <EntitySet Name="OrderStatusMasts" EntityType="Self.OrderStatusMast" />
+    <EntitySet Name="Packages" EntityType="Self.Package" />
+    <EntitySet Name="PaymentsInfoes" EntityType="Self.PaymentsInfo" />
+    <EntitySet Name="PaymentTypes" EntityType="Self.PaymentType" />
+    <EntitySet Name="Product_Badges" EntityType="Self.Product_Badges" />
+    <EntitySet Name="ProductContains" EntityType="Self.ProductContain" />
+    <EntitySet Name="ProductContainsMappings" EntityType="Self.ProductContainsMapping" />
+    <EntitySet Name="ProductGallaries" EntityType="Self.ProductGallary" />
+    <EntitySet Name="ProductionTimes" EntityType="Self.ProductionTime" />
+    <EntitySet Name="ProductKeywords" EntityType="Self.ProductKeyword" />
+    <EntitySet Name="ProductKeywordsArabics" EntityType="Self.ProductKeywordsArabic" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Ratings" EntityType="Self.Rating" />
+    <EntitySet Name="RatingProducts" EntityType="Self.RatingProduct" />
+    <EntitySet Name="Residents" EntityType="Self.Resident" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="RolesMappings" EntityType="Self.RolesMapping" />
+    <EntitySet Name="ShopCategories" EntityType="Self.ShopCategory" />
+    <EntitySet Name="ShopCategoryMappings" EntityType="Self.ShopCategoryMapping" />
+    <EntitySet Name="SocialMedias" EntityType="Self.SocialMedia" />
+    <EntitySet Name="SocialMediaMasters" EntityType="Self.SocialMediaMaster" />
+    <EntitySet Name="Sponsors" EntityType="Self.Sponsor" />
+    <EntitySet Name="StoreAddresses" EntityType="Self.StoreAddress" />
+    <EntitySet Name="StoreDeliveryMappings" EntityType="Self.StoreDeliveryMapping" />
+    <EntitySet Name="StoreFavroties" EntityType="Self.StoreFavroty" />
+    <EntitySet Name="StoreLicenses" EntityType="Self.StoreLicense" />
+    <EntitySet Name="StoreOffres" EntityType="Self.StoreOffre" />
+    <EntitySet Name="StorePaymentTypes" EntityType="Self.StorePaymentType" />
+    <EntitySet Name="Stores" EntityType="Self.Store" />
+    <EntitySet Name="StoresDiscounts" EntityType="Self.StoresDiscount" />
+    <EntitySet Name="StoresGallaries" EntityType="Self.StoresGallary" />
+    <EntitySet Name="StoresTaxes" EntityType="Self.StoresTax" />
+    <EntitySet Name="StoreTimings" EntityType="Self.StoreTiming" />
+    <EntitySet Name="SuperAdminLogins" EntityType="Self.SuperAdminLogin" />
+    <EntitySet Name="Taxes" EntityType="Self.Tax" />
+    <EntitySet Name="TrackingAramexes" EntityType="Self.TrackingAramex" />
+    <EntitySet Name="TrackOrders" EntityType="Self.TrackOrder" />
+    <EntitySet Name="WeekDays" EntityType="Self.WeekDay" />
+    <EntitySet Name="WingWeights" EntityType="Self.WingWeight" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <FunctionImport Name="usp_GetAllCategories">
+      <Parameter Name="SearchValue" Mode="In" Type="String" />
+      <Parameter Name="PageNo" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+      <Parameter Name="SortColumn" Mode="In" Type="String" />
+      <Parameter Name="SortOrder" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

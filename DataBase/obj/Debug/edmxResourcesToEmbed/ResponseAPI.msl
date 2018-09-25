@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ResponseAPIModelStoreContainer" CdmEntityContainer="ResponseAPIEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ResponseAPIModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="catID" ColumnName="catID" />
+          <ScalarProperty Name="catName" ColumnName="catName" />
+          <ScalarProperty Name="catDescription" ColumnName="catDescription" />
+          <ScalarProperty Name="catCreatedOn" ColumnName="catCreatedOn" />
+          <ScalarProperty Name="catCreatedBy" ColumnName="catCreatedBy" />
+          <ScalarProperty Name="catModifiedOn" ColumnName="catModifiedOn" />
+          <ScalarProperty Name="catModifiedBy" ColumnName="catModifiedBy" />
+          <ScalarProperty Name="catIsDeleted" ColumnName="catIsDeleted" />
+          <ScalarProperty Name="catIsActive" ColumnName="catIsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

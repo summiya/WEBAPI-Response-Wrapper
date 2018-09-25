@@ -1,0 +1,36 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\DataBase.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\obj\Debug\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\obj\Debug\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\obj\Debug\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\obj\Debug\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\ResponseAPI\DataBase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\ResponseAPI\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\DataBase\obj\Debug\DataBase.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\DataBase\obj\Debug\DataBase.dll
+C:\Users\user\Desktop\ResponseAPI\DataBase\obj\Debug\DataBase.pdb

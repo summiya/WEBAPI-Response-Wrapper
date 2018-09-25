@@ -1,0 +1,114 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessServices.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessServices.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\AutoMapper.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\GenericRepository.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Interfaces.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\System.ValueTuple.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\UnitOfWork.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Resolver.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessEntities.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\DataBase.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\GenericRepository.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\GenericRepository.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Interfaces.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\UnitOfWork.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\UnitOfWork.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\AutoMapper.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\AutoMapper.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\System.ValueTuple.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Resolver.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\MapperUtility.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\MapperUtility.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessServices.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessServices\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessServices.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessServices.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessServices.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\AutoMapper.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\GenericRepository.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Interfaces.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\MapperUtility.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Resolver.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\UnitOfWork.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\GenericRepository.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Interfaces.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\MapperUtility.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Resolver.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\UnitOfWork.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\UnitOfWork.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\AutoMapper.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\AutoMapper.xml
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\BusinessServices.dll.config
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\BusinessServices.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\BusinessServices.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\AutoMapper.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\GenericRepository.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Interfaces.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\MapperUtility.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Resolver.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\UnitOfWork.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\GenericRepository.dll.config
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Interfaces.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\MapperUtility.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Resolver.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\UnitOfWork.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\UnitOfWork.dll.config
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\AutoMapper.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\AutoMapper.xml
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\obj\Debug\BusinessServices.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\obj\Debug\BusinessServices.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\obj\Debug\BusinessServices.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\obj\Debug\BusinessServices.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessServices\obj\Debug\BusinessServices.pdb

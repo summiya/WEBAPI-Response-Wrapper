@@ -1,0 +1,27 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\bin\Debug\Interfaces.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\bin\Debug\Interfaces.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\bin\Debug\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\bin\Debug\BusinessEntities.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\user\Desktop\ResponseAPI\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\user\Desktop\ResponseAPI\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\user\Desktop\ResponseAPI\Interfaces\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\ResponseAPI\Interfaces\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\ResponseAPI\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\user\Desktop\ResponseAPI\Interfaces\obj\Debug\Interfaces.pdb

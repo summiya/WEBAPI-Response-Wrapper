@@ -1,0 +1,1656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AkShaakModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdminRegistration">
+    <Key>
+      <PropertyRef Name="admRegID" />
+    </Key>
+    <Property Name="admRegID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="admRegFirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="admRegLastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="admRegImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="admRegDOB" Type="nvarchar" MaxLength="50" />
+    <Property Name="admRegCreatedOn" Type="datetime" />
+    <Property Name="admRegCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="admRegModifiedOn" Type="datetime" />
+    <Property Name="admRegModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="admRegIsDeleted" Type="bit" />
+    <Property Name="admRegIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Attributes">
+    <Key>
+      <PropertyRef Name="attID" />
+    </Key>
+    <Property Name="attID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="attName" Type="nvarchar" MaxLength="100" />
+    <Property Name="attDescription" Type="nvarchar" MaxLength="100" />
+    <Property Name="attImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="attPosition" Type="int" />
+    <Property Name="attSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="attCreatedOn" Type="datetime" />
+    <Property Name="attCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="attModifiedOn" Type="datetime" />
+    <Property Name="attModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="attIsDeleted" Type="bit" />
+    <Property Name="attIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="AttributesOption">
+    <Key>
+      <PropertyRef Name="attOptID" />
+    </Key>
+    <Property Name="attOptID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="attID" Type="nvarchar" MaxLength="50" />
+    <Property Name="attOptName" Type="nvarchar" MaxLength="100" />
+    <Property Name="attOptDescription" Type="nvarchar(max)" />
+    <Property Name="attOptImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="attOptQuantity" Type="bit" />
+    <Property Name="attOptPrice" Type="bit" />
+    <Property Name="attOptPosition" Type="int" />
+    <Property Name="attOptSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="attOptType" Type="nvarchar" MaxLength="100" />
+    <Property Name="attOptCreatedOn" Type="datetime" />
+    <Property Name="attOptCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="attOptModifiedOn" Type="datetime" />
+    <Property Name="attOptModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="attOptIsDeleted" Type="bit" />
+    <Property Name="attOptIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Badges">
+    <Key>
+      <PropertyRef Name="BadgeId" />
+    </Key>
+    <Property Name="BadgeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BadgeName" Type="varchar" MaxLength="500" />
+    <Property Name="BadgeDescription" Type="varchar" MaxLength="500" />
+    <Property Name="Image" Type="varchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="datetime" />
+    <Property Name="CreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CartWhishlistFavroties">
+    <Key>
+      <PropertyRef Name="carWhiFavID" />
+    </Key>
+    <Property Name="carWhiFavID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proID" Type="nvarchar" MaxLength="500" />
+    <Property Name="invVarID" Type="nvarchar" MaxLength="50" />
+    <Property Name="carWhiFavQty" Type="nvarchar" MaxLength="500" />
+    <Property Name="carWhiFavType" Type="nvarchar" MaxLength="500" />
+    <Property Name="carDeliveryType" Type="int" />
+    <Property Name="cusCarInfCreatedOn" Type="datetime" />
+    <Property Name="cusCarInfCreatedBy" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="catID" />
+    </Key>
+    <Property Name="catID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="catName" Type="nvarchar" MaxLength="100" />
+    <Property Name="catNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="catDescription" Type="nvarchar(max)" />
+    <Property Name="catDescriptionAr" Type="nvarchar(max)" />
+    <Property Name="catImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="catParentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="catPosition" Type="int" />
+    <Property Name="catLevel" Type="int" />
+    <Property Name="catChildrenCount" Type="int" />
+    <Property Name="catSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="catIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="catCreatedOn" Type="datetime" />
+    <Property Name="catCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="catModifiedOn" Type="datetime" />
+    <Property Name="catModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="catIsDeleted" Type="bit" />
+    <Property Name="catIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="CategoryMapping">
+    <Key>
+      <PropertyRef Name="catMapID" />
+    </Key>
+    <Property Name="catMapID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="catID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="catMapCreatedOn" Type="datetime" />
+    <Property Name="catMapCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="catMapModifiedOn" Type="datetime" />
+    <Property Name="catMapModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="catMapIsDeleted" Type="bit" />
+    <Property Name="catMapIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="CDeliveryDetails">
+    <Key>
+      <PropertyRef Name="cDeliveryID" />
+    </Key>
+    <Property Name="cDeliveryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cdelOrderID" Type="varchar" MaxLength="50" />
+    <Property Name="cdelOrderdetID" Type="varchar" MaxLength="50" />
+    <Property Name="cdelStoreID" Type="varchar" MaxLength="50" />
+    <Property Name="cdelStatus" Type="varchar" MaxLength="100" />
+    <Property Name="cdelCarryID" Type="varchar" MaxLength="50" />
+    <Property Name="cdelError" Type="varchar" MaxLength="1000" />
+    <Property Name="cdelCode" Type="varchar" MaxLength="50" />
+    <Property Name="cdelCreatedDate" Type="datetime" />
+    <Property Name="cdelCreatedBy" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="citID" />
+    </Key>
+    <Property Name="citID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="staID" Type="nvarchar" MaxLength="50" />
+    <Property Name="citName" Type="nvarchar" MaxLength="100" />
+    <Property Name="citNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="citCreatedOn" Type="datetime" />
+    <Property Name="citCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="citModifiedOn" Type="datetime" />
+    <Property Name="citModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="citIsDeleted" Type="bit" />
+    <Property Name="citIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="CityArea">
+    <Key>
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="AddressID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CityID" Type="uniqueidentifier" />
+    <Property Name="AddrAreaNameEn" Type="nvarchar" MaxLength="1000" />
+    <Property Name="AddrAreaNameAr" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="ContactUsEmail">
+    <Key>
+      <PropertyRef Name="contactUsID" />
+    </Key>
+    <Property Name="contactUsID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="contactUsName" Type="nvarchar" MaxLength="100" />
+    <Property Name="contactUsEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="contactUsMobileNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="contactUsMessage" Type="nvarchar(max)" />
+    <Property Name="contactUsCreatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="couID" />
+    </Key>
+    <Property Name="couID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="couCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="couName" Type="nvarchar" MaxLength="100" />
+    <Property Name="couNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="couIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="couCreatedOn" Type="datetime" />
+    <Property Name="couCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="couModifiedOn" Type="datetime" />
+    <Property Name="couModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="couIsDeleted" Type="bit" />
+    <Property Name="couIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="curID" />
+    </Key>
+    <Property Name="curID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="curCountryName" Type="nvarchar" MaxLength="100" />
+    <Property Name="curCountryNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="curCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="curName" Type="nvarchar" MaxLength="100" />
+    <Property Name="curNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="curIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="curCreatedOn" Type="datetime" />
+    <Property Name="curCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="curModifiedOn" Type="datetime" />
+    <Property Name="curModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="curIsDeleted" Type="bit" />
+    <Property Name="curIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="CustomerAddress">
+    <Key>
+      <PropertyRef Name="cusAddID" />
+    </Key>
+    <Property Name="cusAddID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="citID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusAddAddress" Type="nvarchar(max)" />
+    <Property Name="cusAddBVType" Type="int" />
+    <Property Name="cusAddCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddState" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddCountry" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddZipcode" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddBuilding" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddAptNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddLongitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusAddLatitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusAddType" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusAddStreet" Type="nvarchar" MaxLength="200" />
+    <Property Name="cusAddFloor" Type="nvarchar" MaxLength="200" />
+    <Property Name="cusAddFirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddLastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddMobileNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusAddCreatedOn" Type="datetime" />
+    <Property Name="cusAddCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddModifiedOn" Type="datetime" />
+    <Property Name="cusAddModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusAddIsDeleted" Type="bit" />
+    <Property Name="cusAddIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="CustomerCardInfo">
+    <Key>
+      <PropertyRef Name="cusCarInfID" />
+    </Key>
+    <Property Name="cusCarInfID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusCarInfCardNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusCarInfCardName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusCarInfExpMonth" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusCarInfExpYear" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusCarInfCreatedOn" Type="datetime" />
+    <Property Name="cusCarInfCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusCarInfModifieOn" Type="datetime" />
+    <Property Name="cusCarInfModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusCarInfIsDeleted" Type="bit" />
+    <Property Name="cusCarInfIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="cusID" />
+    </Key>
+    <Property Name="cusID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="natID" Type="nvarchar" MaxLength="50" />
+    <Property Name="resID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusFirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusLastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusDOB" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusGender" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusCreatedOn" Type="datetime" />
+    <Property Name="cusModifiedOn" Type="datetime" />
+    <Property Name="cusModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusIsGuest" Type="bit" />
+    <Property Name="cusIsDeleted" Type="bit" />
+    <Property Name="cusIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="DEDMaster">
+    <Key>
+      <PropertyRef Name="dedID" />
+    </Key>
+    <Property Name="dedID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="dedName" Type="nvarchar" MaxLength="100" />
+    <Property Name="dedCreatedOn" Type="datetime" />
+    <Property Name="dedCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="dedModifiedOn" Type="datetime" />
+    <Property Name="dedModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="dedIsDeleted" Type="bit" />
+    <Property Name="dedIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Discount">
+    <Key>
+      <PropertyRef Name="disID" />
+    </Key>
+    <Property Name="disID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="disName" Type="nvarchar" MaxLength="100" />
+    <Property Name="disType" Type="nvarchar" MaxLength="100" />
+    <Property Name="disValue" Type="float" />
+    <Property Name="disCreatedOn" Type="datetime" />
+    <Property Name="disCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="disModifiedOn" Type="datetime" />
+    <Property Name="disModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="disIsDeleted" Type="bit" />
+    <Property Name="disIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="EmailSettings">
+    <Key>
+      <PropertyRef Name="settingId" />
+    </Key>
+    <Property Name="settingId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="smtpHost" Type="nvarchar" MaxLength="50" />
+    <Property Name="smtpPort" Type="nvarchar" MaxLength="50" />
+    <Property Name="smtpEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="smtpPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="smtpSSL" Type="bit" />
+    <Property Name="smsUsername" Type="nvarchar" MaxLength="100" />
+    <Property Name="smsPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="smsLink" Type="nvarchar" MaxLength="200" />
+    <Property Name="smsApiKey" Type="nvarchar" MaxLength="200" />
+    <Property Name="smtpCreatedOn" Type="datetime" />
+    <Property Name="smtpCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="smtpModifiedOn" Type="datetime" />
+    <Property Name="smtpModifiedBy" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ExchangeReturnPol">
+    <Key>
+      <PropertyRef Name="excRetPolID" />
+    </Key>
+    <Property Name="excRetPolID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="excRetPolName" Type="nvarchar" MaxLength="200" />
+    <Property Name="excRetPolNameAr" Type="nvarchar" MaxLength="200" />
+    <Property Name="excRetPolCreatedOn" Type="datetime" />
+    <Property Name="excRetPolCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="excRetPolModifiedOn" Type="datetime" />
+    <Property Name="excRetPolModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="excRetPolIsDeleted" Type="bit" />
+    <Property Name="excRetPolIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ExchangeReturnTime">
+    <Key>
+      <PropertyRef Name="excRetTimID" />
+    </Key>
+    <Property Name="excRetTimID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="excRetPolID" Type="nvarchar" MaxLength="50" />
+    <Property Name="excRetTimName" Type="nvarchar" MaxLength="200" />
+    <Property Name="excRetTimNameAr" Type="nvarchar" MaxLength="200" />
+    <Property Name="excRetTimDays" Type="int" />
+    <Property Name="excRetTimCreatedOn" Type="datetime" />
+    <Property Name="excRetTimCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="excRetTimModifiedOn" Type="datetime" />
+    <Property Name="excRetTimModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="excRetTimIsDeleted" Type="bit" />
+    <Property Name="excRetTimIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="InventoryProduct">
+    <Key>
+      <PropertyRef Name="invProID" />
+    </Key>
+    <Property Name="invProID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invProStockQty" Type="float" />
+    <Property Name="invProSalesQty" Type="float" />
+    <Property Name="invProReturnedQty" Type="float" />
+    <Property Name="invProDamagedQty" Type="float" />
+    <Property Name="invProToOSQty" Type="float" />
+    <Property Name="invProMinCartQty" Type="float" />
+    <Property Name="invProMaxCartQty" Type="float" />
+    <Property Name="invProMaxNotifQty" Type="float" />
+    <Property Name="invProCreatedOn" Type="datetime" />
+    <Property Name="invProCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="invProModifiedOn" Type="datetime" />
+    <Property Name="invProModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="invProIsDeleted" Type="bit" />
+    <Property Name="invProIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="InventoryProductLog">
+    <Key>
+      <PropertyRef Name="invProLogID" />
+    </Key>
+    <Property Name="invProLogID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invProLogType" Type="nvarchar" MaxLength="50" />
+    <Property Name="invVarID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invProLogQty" Type="float" />
+    <Property Name="invProLogDate" Type="datetime" />
+    <Property Name="invProLogCreatedOn" Type="datetime" />
+    <Property Name="invProLogCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="invProLogModifiedOn" Type="datetime" />
+    <Property Name="invProLogModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="invProLogIsDeleted" Type="bit" />
+    <Property Name="invProLogIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="InventoryVariant">
+    <Key>
+      <PropertyRef Name="invVarID" />
+    </Key>
+    <Property Name="invVarID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proConID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invVarQty" Type="float" />
+    <Property Name="invVarPerDayQty" Type="float" />
+    <Property Name="invVarPrice" Type="float" />
+    <Property Name="invVarDisValue" Type="float" />
+    <Property Name="invVarDisAmount" Type="float" />
+    <Property Name="invVarFinalAmount" Type="float" />
+    <Property Name="invVarCreatedOn" Type="datetime" />
+    <Property Name="invVarCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="invVarModifiedOn" Type="datetime" />
+    <Property Name="invVarModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="invVarIsDeleted" Type="bit" />
+    <Property Name="invVarIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+    </Key>
+    <Property Name="InvoiceID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="InvoiceNo" Type="int" Nullable="false" />
+    <Property Name="invOrderID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invStoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invCreatedDate" Type="datetime" />
+    <Property Name="invCreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="invModifiedDate" Type="datetime" />
+    <Property Name="invModifiedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="invIsActive" Type="bit" />
+    <Property Name="invIsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="lanID" />
+    </Key>
+    <Property Name="lanID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="lanCode" Type="nvarchar" MaxLength="3" />
+    <Property Name="lanName" Type="nvarchar" MaxLength="100" />
+    <Property Name="lanNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="lanIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="lanIsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Logins">
+    <Key>
+      <PropertyRef Name="cusLogID" />
+    </Key>
+    <Property Name="cusLogID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusLogEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusLogMobile" Type="nvarchar" MaxLength="100" />
+    <Property Name="cusLogType" Type="nvarchar" MaxLength="300" />
+    <Property Name="cusLogIsOnline" Type="bit" />
+    <Property Name="cusLogIsVerified" Type="bit" />
+    <Property Name="cusOTP" Type="varchar" MaxLength="10" />
+    <Property Name="cusLogCreatedOn" Type="datetime" />
+    <Property Name="cusLogModifiedOn" Type="datetime" />
+    <Property Name="cusLogIsDeleted" Type="bit" />
+    <Property Name="cusLogIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="MailTemplateContent">
+    <Key>
+      <PropertyRef Name="mailerCode" />
+    </Key>
+    <Property Name="mailerCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="subjectEN" Type="nvarchar" MaxLength="4000" />
+    <Property Name="bodyEN" Type="nvarchar(max)" />
+    <Property Name="smsEN" Type="nvarchar" MaxLength="1000" />
+    <Property Name="subjectAR" Type="nvarchar" MaxLength="4000" />
+    <Property Name="bodyAR" Type="nvarchar(max)" />
+    <Property Name="smsAR" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="MenuMapping">
+    <Key>
+      <PropertyRef Name="menMapID" />
+    </Key>
+    <Property Name="menMapID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="rolID" Type="nvarchar" MaxLength="50" />
+    <Property Name="menID" Type="nvarchar" MaxLength="50" />
+    <Property Name="menMapCreatedOn" Type="datetime" />
+    <Property Name="menMapCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="menMapModifiedOn" Type="datetime" />
+    <Property Name="menMapModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="menMapIsDeleted" Type="bit" />
+    <Property Name="menMapIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="menID" />
+    </Key>
+    <Property Name="menID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="menName" Type="nvarchar" MaxLength="100" />
+    <Property Name="menLink" Type="nvarchar" MaxLength="500" />
+    <Property Name="menIcon" Type="nvarchar" MaxLength="500" />
+    <Property Name="menParentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="menCreatedOn" Type="datetime" />
+    <Property Name="menCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="menModifiedOn" Type="datetime" />
+    <Property Name="menModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="menIsDeleted" Type="bit" />
+    <Property Name="menIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Merchant">
+    <Key>
+      <PropertyRef Name="merID" />
+    </Key>
+    <Property Name="merID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="natID" Type="nvarchar" MaxLength="50" />
+    <Property Name="resID" Type="nvarchar" MaxLength="50" />
+    <Property Name="merFirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="merLastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="merDesignation" Type="nvarchar" MaxLength="100" />
+    <Property Name="merDob" Type="nvarchar" MaxLength="50" />
+    <Property Name="merGender" Type="nvarchar" MaxLength="50" />
+    <Property Name="merLogTyp" Type="nvarchar" MaxLength="50" />
+    <Property Name="merLogTypID" Type="nvarchar" MaxLength="100" />
+    <Property Name="merImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="merIsVerified" Type="bit" />
+    <Property Name="merStoreCount" Type="int" />
+    <Property Name="merCatCount" Type="int" />
+    <Property Name="merProCount" Type="int" />
+    <Property Name="merPayment" Type="bit" />
+    <Property Name="pacID" Type="nvarchar" MaxLength="50" />
+    <Property Name="merPlanDate" Type="datetime" />
+    <Property Name="merPlanRenewalDate" Type="datetime" />
+    <Property Name="merCreatedOn" Type="datetime" />
+    <Property Name="merCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merModifiedOn" Type="datetime" />
+    <Property Name="merModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merIsDeleted" Type="bit" />
+    <Property Name="merIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="MerchantAddress">
+    <Key>
+      <PropertyRef Name="merAddID" />
+    </Key>
+    <Property Name="merAddID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="merID" Type="nvarchar" MaxLength="50" />
+    <Property Name="merAddAddress" Type="nvarchar(max)" />
+    <Property Name="merAddCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddState" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddCountry" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddZipcode" Type="nvarchar" MaxLength="50" />
+    <Property Name="merAddBuildingNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddAptNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddLandMark" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddType" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddCreatedOn" Type="datetime" />
+    <Property Name="merAddCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddModifiedOn" Type="datetime" />
+    <Property Name="merAddModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merAddIsDeleted" Type="bit" />
+    <Property Name="merAddIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="MerchantBankDetails">
+    <Key>
+      <PropertyRef Name="merBanDetID" />
+    </Key>
+    <Property Name="merBanDetID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="merID" Type="nvarchar" MaxLength="50" />
+    <Property Name="merBanDetAccountName" Type="nvarchar" MaxLength="500" />
+    <Property Name="merBanDetBankName" Type="nvarchar" MaxLength="500" />
+    <Property Name="merBanDetBranchName" Type="nvarchar" MaxLength="500" />
+    <Property Name="merBanDetIBANNo" Type="nvarchar" MaxLength="500" />
+    <Property Name="merBanDetSWIFTCode" Type="nvarchar" MaxLength="500" />
+    <Property Name="merBanDetCreatedOn" Type="datetime" />
+    <Property Name="merBanDetCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merBanDetModifiedOn" Type="datetime" />
+    <Property Name="merBanDetModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merBanDetIsDeleted" Type="bit" />
+    <Property Name="merBanDetIsActive" Type="bit" />
+    <Property Name="merBanAlternativePay" Type="bit" />
+  </EntityType>
+  <EntityType Name="MerchantCardInfo">
+    <Key>
+      <PropertyRef Name="merCarInfID" />
+    </Key>
+    <Property Name="merCarInfID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="merID" Type="nvarchar" MaxLength="50" />
+    <Property Name="merCarInfCardNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="merCarInfCardName" Type="nvarchar" MaxLength="100" />
+    <Property Name="merCarInfExpMonth" Type="nvarchar" MaxLength="100" />
+    <Property Name="merCarInfExpYear" Type="nvarchar" MaxLength="100" />
+    <Property Name="merCarInfCreatedOn" Type="datetime" />
+    <Property Name="merCarInfCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merCarInfModifiedOn" Type="datetime" />
+    <Property Name="merCarInfModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="merCarInfIsDeleted" Type="bit" />
+    <Property Name="merCarInfIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="MessagesMain">
+    <Key>
+      <PropertyRef Name="mesID" />
+    </Key>
+    <Property Name="mesID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="mesSubject" Type="nvarchar" MaxLength="500" />
+    <Property Name="mesDetail" Type="nvarchar" MaxLength="3000" />
+    <Property Name="mesTo" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesCreatedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesTypeID" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesIsActive" Type="bit" />
+    <Property Name="mesIsRead" Type="bit" />
+    <Property Name="mesIsReadMer" Type="bit" />
+    <Property Name="mesOrderNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MessageThread">
+    <Key>
+      <PropertyRef Name="mesThreadID" />
+    </Key>
+    <Property Name="mesThreadID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="mesID" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesThreadDetail" Type="nvarchar" MaxLength="3000" />
+    <Property Name="mesThreadBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesThreadCreatedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="mesThreadOrderNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Nationality">
+    <Key>
+      <PropertyRef Name="natID" />
+    </Key>
+    <Property Name="natID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="natName" Type="nvarchar" MaxLength="100" />
+    <Property Name="natNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="natCreatedOn" Type="datetime" />
+    <Property Name="natCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="natModifiedOn" Type="datetime" />
+    <Property Name="natModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="natIsDeleted" Type="bit" />
+    <Property Name="natIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="NGOMaster">
+    <Key>
+      <PropertyRef Name="ngoID" />
+    </Key>
+    <Property Name="ngoID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ngoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ngoNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="ngoImgName" Type="nvarchar" MaxLength="500" />
+    <Property Name="ngoCreatedOn" Type="datetime" />
+    <Property Name="ngoCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ngoModifiedOn" Type="datetime" />
+    <Property Name="ngoModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ngoIsDeleted" Type="bit" />
+    <Property Name="ngoIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="OfferType">
+    <Key>
+      <PropertyRef Name="offTypID" />
+    </Key>
+    <Property Name="offTypID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="offTypName" Type="nvarchar" MaxLength="100" />
+    <Property Name="offTypCreatedOn" Type="datetime" />
+    <Property Name="offTypCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="offTypModifiedOn" Type="datetime" />
+    <Property Name="offTypModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="offTypIsDeleted" Type="bit" />
+    <Property Name="offTypIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="ordDetID" />
+    </Key>
+    <Property Name="ordDetID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ordID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="invVarID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDetPriceOriginalPrice" Type="float" />
+    <Property Name="ordDetPriceOriginalDisPrice" Type="float" />
+    <Property Name="ordDetProPrice" Type="float" />
+    <Property Name="ordDetProQty" Type="float" />
+    <Property Name="ordDetTotalPrice" Type="float" />
+    <Property Name="ordDetWingRefNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordPickUp" Type="bit" />
+    <Property Name="ordDetProDiscount" Type="float" />
+    <Property Name="ordDetcusAddrID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDetPaymentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDetSubTotal" Type="float" />
+    <Property Name="ordDetDisTotal" Type="float" />
+    <Property Name="ordDetFinalTotal" Type="float" />
+    <Property Name="ordDetProDefaultPrice" Type="float" />
+    <Property Name="ordDetStoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDetCreatedOn" Type="datetime" />
+    <Property Name="ordDetCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordDetModifiedOn" Type="datetime" />
+    <Property Name="ordDetModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordDetStatus" Type="int" />
+    <Property Name="ordDetIsDeleted" Type="bit" />
+    <Property Name="ordDetIsActive" Type="bit" />
+    <Property Name="ordPersonalDel" Type="bit" />
+    <Property Name="ordDelCharges" Type="float" />
+    <Property Name="ordDelChargeOriginal" Type="float" />
+    <Property Name="ordDetDelNote" Type="nvarchar" MaxLength="3000" />
+    <Property Name="ordDetWingCorTyp" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDeliveryType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="OrderDiscountDetails">
+    <Key>
+      <PropertyRef Name="ordDisDetID" />
+    </Key>
+    <Property Name="ordDisDetID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ordID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoOffID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDisDetCreatedOn" Type="datetime" />
+    <Property Name="ordDisDetCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordDisDetModifiedOn" Type="datetime" />
+    <Property Name="ordDisDetModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordDisDetIsDeleted" Type="bit" />
+    <Property Name="ordDisDetIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ordID" />
+    </Key>
+    <Property Name="ordID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusAddID" Type="nvarchar" MaxLength="50" />
+    <Property Name="payTypID" Type="nvarchar" MaxLength="50" />
+    <Property Name="delMapID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDatetime" Type="datetime" />
+    <Property Name="ordStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDeliveryType" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordDeliveryTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordCancelRemark" Type="nvarchar(max)" />
+    <Property Name="ordSubTotal" Type="float" />
+    <Property Name="ordTotalDiscount" Type="float" />
+    <Property Name="ordDeliveryCharges" Type="float" />
+    <Property Name="ordTotalTax" Type="float" />
+    <Property Name="ordCreditPayment" Type="float" />
+    <Property Name="ordCashPayment" Type="float" />
+    <Property Name="ordGrandTotal" Type="float" />
+    <Property Name="ordOfferCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordPaymentStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordFrom" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordSignature" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordTaxPer" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="ordCreatedOn" Type="datetime" />
+    <Property Name="ordCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordModifiedOn" Type="datetime" />
+    <Property Name="ordModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordIsDeleted" Type="bit" />
+    <Property Name="ordIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="OrdersPayment">
+    <Key>
+      <PropertyRef Name="ordPayID" />
+    </Key>
+    <Property Name="ordPayID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ordID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordPayTransactionID" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordPayTransactionNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordPayTransactionStatus" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ordPayAmount" Type="float" />
+    <Property Name="ordPayCreatedOn" Type="datetime" />
+    <Property Name="ordPayCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordPayModifiedOn" Type="datetime" />
+    <Property Name="ordPayModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ordPayIsDeleted" Type="bit" />
+    <Property Name="ordPayIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="OrderStatusMast">
+    <Key>
+      <PropertyRef Name="ordStatusID" />
+    </Key>
+    <Property Name="ordStatusID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ordStatusName" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordStatusNameAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordStatusIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Packages">
+    <Key>
+      <PropertyRef Name="pacID" />
+    </Key>
+    <Property Name="pacID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="pacName" Type="nvarchar" MaxLength="50" />
+    <Property Name="pacDescription" Type="nvarchar(max)" />
+    <Property Name="pacStoresCount" Type="int" />
+    <Property Name="pacCategoriesCount" Type="int" />
+    <Property Name="pacProductCount" Type="int" />
+    <Property Name="pacPrice" Type="float" />
+    <Property Name="pacType" Type="nvarchar" MaxLength="100" />
+    <Property Name="taxID" Type="nvarchar" MaxLength="50" />
+    <Property Name="pacTaxValue" Type="float" />
+    <Property Name="pacTaxAmount" Type="float" />
+    <Property Name="disID" Type="nvarchar" MaxLength="50" />
+    <Property Name="pacDisValue" Type="float" />
+    <Property Name="pacDisAmount" Type="float" />
+    <Property Name="pacFinalPrice" Type="float" />
+    <Property Name="pacCreatedOn" Type="datetime" />
+    <Property Name="pacCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="pacModifiedOn" Type="datetime" />
+    <Property Name="pacModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="pacIsDeleted" Type="bit" />
+    <Property Name="pacIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PaymentsInfo">
+    <Key>
+      <PropertyRef Name="payInfID" />
+    </Key>
+    <Property Name="payInfID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="merID" Type="nvarchar" MaxLength="50" />
+    <Property Name="payTypID" Type="nvarchar" MaxLength="50" />
+    <Property Name="payInfTransactionNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="payInfTransactionStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="payInfDate" Type="datetime" />
+    <Property Name="payInfPrice" Type="float" />
+    <Property Name="payInfTaxAmount" Type="float" />
+    <Property Name="payInfDisAmount" Type="float" />
+    <Property Name="payInfFinalPrice" Type="float" />
+    <Property Name="payInfCreatedOn" Type="datetime" />
+    <Property Name="payinfCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="payInfModifiedOn" Type="datetime" />
+    <Property Name="payInfModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="payInfIsDeleted" Type="bit" />
+    <Property Name="payInfIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="PaymentTypes">
+    <Key>
+      <PropertyRef Name="payTypID" />
+    </Key>
+    <Property Name="payTypID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="payTypName" Type="nvarchar" MaxLength="100" />
+    <Property Name="payTypNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="payTypDescription" Type="nvarchar(max)" />
+    <Property Name="payTypDescriptionAr" Type="nvarchar(max)" />
+    <Property Name="payTypIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="payTypCreatedOn" Type="datetime" />
+    <Property Name="payTypCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="payTypModifiedOn" Type="datetime" />
+    <Property Name="payTypModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="payTypIsDeleted" Type="bit" />
+    <Property Name="payTypIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Product_Badges">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StoId" Type="nvarchar" MaxLength="500" />
+    <Property Name="ProductId" Type="nvarchar" MaxLength="500" />
+    <Property Name="BadgeId" Type="varchar" MaxLength="500" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="Priority" Type="int" />
+  </EntityType>
+  <EntityType Name="ProductContains">
+    <Key>
+      <PropertyRef Name="proConID" />
+    </Key>
+    <Property Name="proConID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="catID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proConName" Type="nvarchar" MaxLength="100" />
+    <Property Name="proConNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="proConSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="proConDescription" Type="nvarchar(max)" />
+    <Property Name="proConIcon" Type="nvarchar" MaxLength="50" />
+    <Property Name="proSortNo" Type="int" />
+    <Property Name="proConCreatedOn" Type="datetime" />
+    <Property Name="proConCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proConModifiedOn" Type="datetime" />
+    <Property Name="proConModifedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proConIsDeleted" Type="bit" />
+    <Property Name="proConIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ProductContainsMapping">
+    <Key>
+      <PropertyRef Name="proConMapID" />
+    </Key>
+    <Property Name="proConMapID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proConID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proConMapCreatedOn" Type="datetime" />
+    <Property Name="proConMapCreatedBy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProductGallary">
+    <Key>
+      <PropertyRef Name="proGalID" />
+    </Key>
+    <Property Name="proGalID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proGalImgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="proGalCreatedOn" Type="datetime" />
+    <Property Name="proGalCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proGalModifiedOn" Type="datetime" />
+    <Property Name="proGalModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proGalIsDeleted" Type="bit" />
+    <Property Name="proGalIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ProductionTime">
+    <Key>
+      <PropertyRef Name="prodTimID" />
+    </Key>
+    <Property Name="prodTimID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="prodTimName" Type="nvarchar" MaxLength="100" />
+    <Property Name="prodTimNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="prodTimDays" Type="int" />
+    <Property Name="prodTimCreatedOn" Type="datetime" />
+    <Property Name="prodTimCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="prodTimModifiedOn" Type="datetime" />
+    <Property Name="prodTimModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="prodTimIsDeleted" Type="bit" />
+    <Property Name="prodTimIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ProductKeywords">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="KeywordEn" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="ProductKeywordsArabic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="KeywordAr" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="proID" />
+    </Key>
+    <Property Name="proID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="catID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoTaxID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoDisID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="proType" Type="nvarchar" MaxLength="50" />
+    <Property Name="proName" Type="nvarchar" MaxLength="100" />
+    <Property Name="proNameArb" Type="nvarchar" MaxLength="100" />
+    <Property Name="proSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="proDescription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="proDescriptionArb" Type="nvarchar(max)" />
+    <Property Name="proImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="proDefaultPrice" Type="float" />
+    <Property Name="proAvailableQty" Type="float" />
+    <Property Name="proPerDayQty" Type="float" />
+    <Property Name="prodTimID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proMetaKeyword" Type="nvarchar(max)" />
+    <Property Name="proMetaKeywordArb" Type="nvarchar(max)" />
+    <Property Name="proMetaDescription" Type="nvarchar(max)" />
+    <Property Name="proMetaDescriptionArb" Type="nvarchar(max)" />
+    <Property Name="proHideFromShop" Type="bit" />
+    <Property Name="excRetTimID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proBuyResShipCost" Type="bit" />
+    <Property Name="proIamResShipCost" Type="bit" />
+    <Property Name="proDisValue" Type="float" />
+    <Property Name="proDisAmount" Type="float" />
+    <Property Name="proFinalAmount" Type="float" />
+    <Property Name="proIsRecomemded" Type="bit" />
+    <Property Name="proWeight" Type="int" />
+    <Property Name="proIsPopular" Type="bit" />
+    <Property Name="proIsSubmitted" Type="bit" />
+    <Property Name="proIsApproved" Type="bit" />
+    <Property Name="proCreatedOn" Type="datetime" />
+    <Property Name="proCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proModifiedOn" Type="datetime" />
+    <Property Name="proModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proIsDeleted" Type="bit" />
+    <Property Name="proIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Rating">
+    <Key>
+      <PropertyRef Name="ratID" />
+    </Key>
+    <Property Name="ratID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ratRemarks" Type="nvarchar(max)" />
+    <Property Name="ratValue" Type="int" Nullable="false" />
+    <Property Name="ratDate" Type="datetime" />
+    <Property Name="ratCreatedOn" Type="datetime" />
+    <Property Name="ratCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ratModifiedOn" Type="datetime" />
+    <Property Name="ratModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ratIsDeleted" Type="bit" />
+    <Property Name="ratIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="RatingProduct">
+    <Key>
+      <PropertyRef Name="proRatID" />
+    </Key>
+    <Property Name="proRatID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proRatRemarks" Type="nvarchar(max)" />
+    <Property Name="proRatValue" Type="int" />
+    <Property Name="proRatDate" Type="datetime" />
+    <Property Name="proRatCreatedOn" Type="datetime" />
+    <Property Name="proRatCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proRatModifiedOn" Type="datetime" />
+    <Property Name="proRatModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="proRatIsDeleted" Type="bit" />
+    <Property Name="proRatIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Resident">
+    <Key>
+      <PropertyRef Name="resID" />
+    </Key>
+    <Property Name="resID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="resName" Type="nvarchar" MaxLength="100" />
+    <Property Name="resNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="resCreatedOn" Type="datetime" />
+    <Property Name="resCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="resModifiedOn" Type="datetime" />
+    <Property Name="resModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="resIsDeleted" Type="bit" />
+    <Property Name="resIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="rolID" />
+    </Key>
+    <Property Name="rolID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="rolName" Type="nvarchar" MaxLength="100" />
+    <Property Name="rolCreatedOn" Type="datetime" />
+    <Property Name="rolCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="rolModifiedOn" Type="datetime" />
+    <Property Name="rolModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="rolIsDeleted" Type="bit" />
+    <Property Name="rolIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="RolesMapping">
+    <Key>
+      <PropertyRef Name="rolMapID" />
+    </Key>
+    <Property Name="rolMapID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="admRegID" Type="nvarchar" MaxLength="50" />
+    <Property Name="rolID" Type="nvarchar" MaxLength="50" />
+    <Property Name="rolMapCreatedOn" Type="datetime" />
+    <Property Name="rolMapCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="rolMapModifiedOn" Type="datetime" />
+    <Property Name="rolMapModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="rolMapIsDeleted" Type="bit" />
+    <Property Name="rolMapIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ShopCategories">
+    <Key>
+      <PropertyRef Name="shoCatID" />
+    </Key>
+    <Property Name="shoCatID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="shoCatName" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatDescription" Type="nvarchar(max)" />
+    <Property Name="shoCatDescriptionAr" Type="nvarchar(max)" />
+    <Property Name="shoCatImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatParentID" Type="nvarchar" MaxLength="50" />
+    <Property Name="shoCatPosition" Type="int" />
+    <Property Name="shoCatLevel" Type="int" />
+    <Property Name="shoCatChildrenCount" Type="int" />
+    <Property Name="shoCatSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatCreatedOn" Type="datetime" />
+    <Property Name="shoCatCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatModifiedOn" Type="datetime" />
+    <Property Name="shoCatModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatIsDeleted" Type="bit" />
+    <Property Name="shoCatIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="ShopCategoryMapping">
+    <Key>
+      <PropertyRef Name="shoCatMapID" />
+    </Key>
+    <Property Name="shoCatMapID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="shoCatID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="shoCatMapCreatedOn" Type="datetime" />
+    <Property Name="shoCatMapCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatMapModifiedOn" Type="datetime" />
+    <Property Name="shoCatMapModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="shoCatMapIsDeleted" Type="bit" />
+    <Property Name="shoCatMapIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="SocialMedia">
+    <Key>
+      <PropertyRef Name="socMedID" />
+    </Key>
+    <Property Name="socMedID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="socMedMasID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="socMedName" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedCreatedOn" Type="datetime" />
+    <Property Name="socMedCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedModifiedOn" Type="datetime" />
+    <Property Name="socMedModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedIsDeleted" Type="bit" />
+    <Property Name="socMedIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="SocialMediaMaster">
+    <Key>
+      <PropertyRef Name="socMedMasID" />
+    </Key>
+    <Property Name="socMedMasID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="socMedMasName" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedMasNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedMasIcon" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedCreatedOn" Type="datetime" />
+    <Property Name="socMedCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedModifiedOn" Type="datetime" />
+    <Property Name="socMedModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="socMedMasIsDeleted" Type="bit" />
+    <Property Name="socMedMasIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sponsors">
+    <Key>
+      <PropertyRef Name="spoID" />
+    </Key>
+    <Property Name="spoID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="spoName" Type="nvarchar" MaxLength="50" />
+    <Property Name="spoDescription" Type="nvarchar(max)" />
+    <Property Name="spoImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="spoLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="spoSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="spoCreatedOn" Type="datetime" />
+    <Property Name="spoCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="spoModifiedOn" Type="datetime" />
+    <Property Name="spoModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="spoIsDeleted" Type="bit" />
+    <Property Name="spoIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="StoreAddress">
+    <Key>
+      <PropertyRef Name="stoAddID" />
+    </Key>
+    <Property Name="stoAddID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="citID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoAddAddress" Type="nvarchar(max)" />
+    <Property Name="stoBVType" Type="int" />
+    <Property Name="stoAddCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddState" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddCountry" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddZipcode" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddArea" Type="nvarchar" MaxLength="100" />
+    <Property Name="StoAddBuilding" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddAptNo" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddLongitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoAddLatitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoAddType" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoAddStreet" Type="nvarchar" MaxLength="200" />
+    <Property Name="stoAddFloor" Type="nvarchar" MaxLength="200" />
+    <Property Name="stoAddShowMyLoc" Type="bit" />
+    <Property Name="stoAddAvailablePikup" Type="bit" />
+    <Property Name="stoAddCreatedOn" Type="datetime" />
+    <Property Name="stoAddCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddModifiedOn" Type="datetime" />
+    <Property Name="stoAddModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAddIsDeleted" Type="bit" />
+    <Property Name="stoAddIsActive" Type="bit" />
+    <Property Name="stoPersonalDelAvl" Type="bit" />
+    <Property Name="stoPersonalDelCitID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StoreDeliveryMapping">
+    <Key>
+      <PropertyRef Name="stoDelMapID" />
+    </Key>
+    <Property Name="stoDelMapID" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="citID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoDelMapAmt" Type="float" />
+    <Property Name="stoDelIsEnabled" Type="bit" />
+  </EntityType>
+  <EntityType Name="StoreFavroties">
+    <Key>
+      <PropertyRef Name="stoFavID" />
+    </Key>
+    <Property Name="stoFavID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="cusID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoFavCreatedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="StoreLicense">
+    <Key>
+      <PropertyRef Name="stoLicID" />
+    </Key>
+    <Property Name="stoLicID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoLicEmirateIDName" Type="nvarchar" MaxLength="300" />
+    <Property Name="stoLicEmiratesIDNumber" Type="nvarchar" MaxLength="300" />
+    <Property Name="stoLicEmiratesExpirydate" Type="nvarchar" MaxLength="300" />
+    <Property Name="stoLicETraderLicenseNumber" Type="nvarchar" MaxLength="300" />
+    <Property Name="stoLicETraderLicenseExpirydate" Type="nvarchar" MaxLength="300" />
+    <Property Name="stoLicETraderRegisteredActivity" Type="nvarchar" MaxLength="300" />
+    <Property Name="stoLicCreatedOn" Type="datetime" />
+    <Property Name="stoLicCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoLicModifiedOn" Type="datetime" />
+    <Property Name="stoLicModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoLicIsActive" Type="bit" />
+    <Property Name="stoLicIsDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="StoreOffres">
+    <Key>
+      <PropertyRef Name="stoOffID" />
+    </Key>
+    <Property Name="stoOffID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="offTypID" Type="nvarchar" MaxLength="50" />
+    <Property Name="proID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoOffImg" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffDesc" Type="nvarchar(max)" />
+    <Property Name="stoOffLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffType" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffExtInt" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffCode" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffFromDate" Type="datetime" />
+    <Property Name="stoOffToDate" Type="datetime" />
+    <Property Name="stoOffDiscount" Type="float" />
+    <Property Name="stoOffMinAmt" Type="float" />
+    <Property Name="stoOffMsg" Type="nvarchar(max)" />
+    <Property Name="stoOffOrderCount" Type="int" />
+    <Property Name="stoOffCreatedOn" Type="datetime" />
+    <Property Name="stoOffCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffModifiedOn" Type="datetime" />
+    <Property Name="stoOffModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoOffIsDeleted" Type="bit" />
+    <Property Name="stoOffIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="StorePaymentTypes">
+    <Key>
+      <PropertyRef Name="stoPayTypID" />
+    </Key>
+    <Property Name="stoPayTypID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="payTypID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoPayTypCreatedOn" Type="datetime" />
+    <Property Name="stoPayTypCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoPayTypModifiedOn" Type="datetime" />
+    <Property Name="stoPayTypModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoPayTypIsDeleted" Type="bit" />
+    <Property Name="stoPayTypIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="stoID" />
+    </Key>
+    <Property Name="stoID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="merID" Type="nvarchar" MaxLength="50" />
+    <Property Name="curID" Type="nvarchar" MaxLength="50" />
+    <Property Name="couID" Type="nvarchar" MaxLength="50" />
+    <Property Name="shoCatID" Type="nvarchar" MaxLength="50" />
+    <Property Name="lanID" Type="nvarchar" MaxLength="50" />
+    <Property Name="lanIDArb" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoDescription" Type="nvarchar(max)" />
+    <Property Name="stoArbName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoArbDescription" Type="nvarchar(max)" />
+    <Property Name="stoEmailID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoContactNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoOwnerName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoImgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoLogo" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoBgImgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAdminEmails" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoAdminCCEmails" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoSMTPEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoSMTPPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoSMTPPort" Type="int" />
+    <Property Name="stoSMTPSSL" Type="bit" />
+    <Property Name="stoSeoName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoApproved" Type="bit" />
+    <Property Name="stoPublished" Type="bit" />
+    <Property Name="stoInventory" Type="bit" />
+    <Property Name="stoTimeZone" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoMetaKeyword" Type="nvarchar(max)" />
+    <Property Name="stoMetaDescription" Type="nvarchar(max)" />
+    <Property Name="stoCreatedOn" Type="datetime" />
+    <Property Name="stoCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoModifiedOn" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoIsDeleted" Type="bit" />
+    <Property Name="stoIsActive" Type="bit" />
+    <Property Name="stoIsClosed" Type="bit" />
+    <Property Name="stoShopPolicies" Type="nvarchar(max)" />
+    <Property Name="stoDeliveryCharges" Type="float" />
+    <Property Name="stoShopStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoStartDate" Type="datetime" />
+    <Property Name="stoEndDate" Type="datetime" />
+    <Property Name="stoStartTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoEndTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoIsAcceptOrder" Type="bit" />
+    <Property Name="stoCheckoutdisable" Type="bit" />
+    <Property Name="ngoID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StoresDiscount">
+    <Key>
+      <PropertyRef Name="stoDisID" />
+    </Key>
+    <Property Name="stoDisID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoDisName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoDisType" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoDisValue" Type="float" />
+    <Property Name="stoDisIsDefault" Type="bit" />
+    <Property Name="stoDisFromDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoDisToDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoDisCreatedOn" Type="datetime" />
+    <Property Name="stoDisCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoDisModifiedOn" Type="datetime" />
+    <Property Name="stoDisModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoDisIsDeleted" Type="bit" />
+    <Property Name="stoDisIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="StoresGallary">
+    <Key>
+      <PropertyRef Name="stoGalID" />
+    </Key>
+    <Property Name="stoGalID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoGalImgName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoGalCreatedOn" Type="datetime" />
+    <Property Name="stoGalCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoGalModifiedOn" Type="datetime" />
+    <Property Name="stoGalModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoGalIsDeleted" Type="bit" />
+    <Property Name="stoGalIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="StoresTax">
+    <Key>
+      <PropertyRef Name="stoTaxID" />
+    </Key>
+    <Property Name="stoTaxID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoTaxName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTaxType" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTaxValue" Type="float" />
+    <Property Name="stoTaxIsDefault" Type="bit" />
+    <Property Name="stoTaxCreatedOn" Type="datetime" />
+    <Property Name="stoTaxCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTaxModifiedOn" Type="datetime" />
+    <Property Name="stoTaxModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTaxIsDeleted" Type="bit" />
+    <Property Name="stoTaxIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="StoreTimings">
+    <Key>
+      <PropertyRef Name="stoTimID" />
+    </Key>
+    <Property Name="stoTimID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="stoID" Type="nvarchar" MaxLength="50" />
+    <Property Name="stoTimDayName" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTimOpeningTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTimClosingTime" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTimCreatedOn" Type="datetime" />
+    <Property Name="stoTimCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTimModifiedOn" Type="datetime" />
+    <Property Name="stoTimModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="stoTimIsDeleted" Type="bit" />
+    <Property Name="stoTimIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="SuperAdminLogin">
+    <Key>
+      <PropertyRef Name="supAdmLogID" />
+    </Key>
+    <Property Name="supAdmLogID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="supAdmLogUserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="supAdmLogPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="supAdmLogCreatedOn" Type="datetime" />
+    <Property Name="supAdmLogCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="supAdmLogModifiedOn" Type="datetime" />
+    <Property Name="supAdmLogModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="supAdmLogIsDeleted" Type="bit" />
+    <Property Name="supAdmLogIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="Tax">
+    <Key>
+      <PropertyRef Name="taxID" />
+    </Key>
+    <Property Name="taxID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="taxName" Type="nvarchar" MaxLength="100" />
+    <Property Name="taxType" Type="nvarchar" MaxLength="100" />
+    <Property Name="taxValue" Type="float" />
+    <Property Name="taxCreatedOn" Type="datetime" />
+    <Property Name="taxCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="taxModifiedOn" Type="datetime" />
+    <Property Name="taxModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="taxIsDeleted" Type="bit" />
+    <Property Name="taxIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="TrackingAramex">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AramexID" Type="nvarchar" MaxLength="300" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderDetailID" Type="nvarchar" MaxLength="50" />
+    <Property Name="MerchantId" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderID" Type="nvarchar" MaxLength="50" />
+    <Property Name="FileURL" Type="nvarchar" MaxLength="1000" />
+    <Property Name="IsEmailSent" Type="bit" />
+  </EntityType>
+  <EntityType Name="TrackOrders">
+    <Key>
+      <PropertyRef Name="traOrdID" />
+    </Key>
+    <Property Name="traOrdID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ordDetID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ordStaID" Type="int" />
+    <Property Name="traOrdText" Type="nvarchar" MaxLength="200" />
+    <Property Name="traOrdDate" Type="datetime" />
+    <Property Name="traOrdCreatedOn" Type="datetime" />
+    <Property Name="traOrdCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="traOrdModifiedOn" Type="datetime" />
+    <Property Name="traOrdModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="traOrdIsDeleted" Type="bit" />
+    <Property Name="traOrdIsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="WeekDays">
+    <Key>
+      <PropertyRef Name="weeDayID" />
+    </Key>
+    <Property Name="weeDayID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="weeDayName" Type="nvarchar" MaxLength="100" />
+    <Property Name="weeDayNameAr" Type="nvarchar" MaxLength="100" />
+    <Property Name="weeDayCreatedOn" Type="datetime" />
+    <Property Name="weeDayCreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="weeDayModifiedOn" Type="datetime" />
+    <Property Name="weeDayModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="weeDayIsDeleted" Type="bit" />
+    <Property Name="weeDayIsActive" Type="bit" />
+    <Property Name="weeDaySort" Type="int" />
+  </EntityType>
+  <EntityType Name="WingWeight">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="weightkg" Type="int" Nullable="false" />
+    <Property Name="weighttext" Type="nvarchar" MaxLength="50" />
+    <Property Name="weighttextAr" Type="nvarchar" MaxLength="50" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="usp_GetAllCategories" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SearchValue" Type="nvarchar" Mode="In" />
+    <Parameter Name="PageNo" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="SortColumn" Type="nvarchar" Mode="In" />
+    <Parameter Name="SortOrder" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="AkShaakModel1StoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdminRegistration" EntityType="Self.AdminRegistration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Attributes" EntityType="Self.Attributes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AttributesOption" EntityType="Self.AttributesOption" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Badges" EntityType="Self.Badges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CartWhishlistFavroties" EntityType="Self.CartWhishlistFavroties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryMapping" EntityType="Self.CategoryMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CDeliveryDetails" EntityType="Self.CDeliveryDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CityArea" EntityType="Self.CityArea" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactUsEmail" EntityType="Self.ContactUsEmail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Currency" EntityType="Self.Currency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerAddress" EntityType="Self.CustomerAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerCardInfo" EntityType="Self.CustomerCardInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DEDMaster" EntityType="Self.DEDMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Discount" EntityType="Self.Discount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmailSettings" EntityType="Self.EmailSettings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExchangeReturnPol" EntityType="Self.ExchangeReturnPol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ExchangeReturnTime" EntityType="Self.ExchangeReturnTime" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryProduct" EntityType="Self.InventoryProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryProductLog" EntityType="Self.InventoryProductLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryVariant" EntityType="Self.InventoryVariant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Invoice" EntityType="Self.Invoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Languages" EntityType="Self.Languages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Logins" EntityType="Self.Logins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MailTemplateContent" EntityType="Self.MailTemplateContent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuMapping" EntityType="Self.MenuMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menus" EntityType="Self.Menus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Merchant" EntityType="Self.Merchant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MerchantAddress" EntityType="Self.MerchantAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MerchantBankDetails" EntityType="Self.MerchantBankDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MerchantCardInfo" EntityType="Self.MerchantCardInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MessagesMain" EntityType="Self.MessagesMain" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MessageThread" EntityType="Self.MessageThread" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nationality" EntityType="Self.Nationality" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NGOMaster" EntityType="Self.NGOMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OfferType" EntityType="Self.OfferType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDiscountDetails" EntityType="Self.OrderDiscountDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrdersPayment" EntityType="Self.OrdersPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderStatusMast" EntityType="Self.OrderStatusMast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Packages" EntityType="Self.Packages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentsInfo" EntityType="Self.PaymentsInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentTypes" EntityType="Self.PaymentTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product_Badges" EntityType="Self.Product_Badges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductContains" EntityType="Self.ProductContains" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductContainsMapping" EntityType="Self.ProductContainsMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductGallary" EntityType="Self.ProductGallary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductionTime" EntityType="Self.ProductionTime" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductKeywords" EntityType="Self.ProductKeywords" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductKeywordsArabic" EntityType="Self.ProductKeywordsArabic" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rating" EntityType="Self.Rating" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RatingProduct" EntityType="Self.RatingProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Resident" EntityType="Self.Resident" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RolesMapping" EntityType="Self.RolesMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShopCategories" EntityType="Self.ShopCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShopCategoryMapping" EntityType="Self.ShopCategoryMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SocialMedia" EntityType="Self.SocialMedia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SocialMediaMaster" EntityType="Self.SocialMediaMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sponsors" EntityType="Self.Sponsors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreAddress" EntityType="Self.StoreAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreDeliveryMapping" EntityType="Self.StoreDeliveryMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreFavroties" EntityType="Self.StoreFavroties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreLicense" EntityType="Self.StoreLicense" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreOffres" EntityType="Self.StoreOffres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StorePaymentTypes" EntityType="Self.StorePaymentTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Stores" EntityType="Self.Stores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoresDiscount" EntityType="Self.StoresDiscount" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoresGallary" EntityType="Self.StoresGallary" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoresTax" EntityType="Self.StoresTax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StoreTimings" EntityType="Self.StoreTimings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SuperAdminLogin" EntityType="Self.SuperAdminLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tax" EntityType="Self.Tax" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrackingAramex" EntityType="Self.TrackingAramex" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrackOrders" EntityType="Self.TrackOrders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WeekDays" EntityType="Self.WeekDays" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WingWeight" EntityType="Self.WingWeight" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,61 @@
+2018-09-12 21:25:40.1306|ERROR|AkshaakWebAPI.Helpers.NLogger|Method: POST
+URL: http://localhost:56234/api/AddCategory/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : AddCategory
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass12_0
+Error: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+
+
+2018-09-12 21:26:33.9959|ERROR|AkshaakWebAPI.Helpers.NLogger|Method: POST
+URL: http://localhost:56234/api/AddCategory/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : AddCategory
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass12_0
+Error: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+
+
+2018-09-12 21:27:35.8162|INFO|AkshaakWebAPI.Helpers.NLogger|JSON
+Method: POST
+URL: http://localhost:56234/api/AddCategory/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : AddCategory
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2018-09-12 21:29:55.3592|INFO|AkshaakWebAPI.Helpers.NLogger|JSON
+Method: POST
+URL: http://localhost:56234/api/AddCategory/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : AddCategory
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2018-09-12 22:55:50.2036|INFO|AkshaakWebAPI.Helpers.NLogger|JSON
+Method: GET
+URL: http://localhost:56234/api/GetAllCategories/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : GetAllCategories
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass14_0
+
+2018-09-12 22:58:03.9125|ERROR|AkshaakWebAPI.Helpers.NLogger|Method: POST
+URL: http://localhost:56234/api/postdata/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : postdata
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass12_0
+Error: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+
+
+2018-09-12 22:58:40.8579|ERROR|AkshaakWebAPI.Helpers.NLogger|Method: POST
+URL: http://localhost:56234/api/postdata/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : postdata
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass12_0
+Error: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+
+
+2018-09-12 22:58:50.5460|ERROR|AkshaakWebAPI.Helpers.NLogger|Method: POST
+URL: http://localhost:56234/api/postdata/
+Controller : AkshaakWebAPI.Controllers.CategoryController
+Action : postdata
+Action Parameters : System.Web.Http.Tracing.ITraceWriterExtensions+<>c__DisplayClass12_0
+Error: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+
+

@@ -1,0 +1,45 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\GenericRepository.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\GenericRepository.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\GenericRepository.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\DataBase.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.dll
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\GenericRepository.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\GenericRepository.dll
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\AkshaakWebAPI\GenericRepository\obj\Debug\GenericRepository.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\GenericRepository.dll.config
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\GenericRepository.dll
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\obj\Debug\GenericRepository.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\obj\Debug\GenericRepository.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\obj\Debug\GenericRepository.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\obj\Debug\GenericRepository.dll
+C:\Users\user\Desktop\ResponseAPI\GenericRepository\obj\Debug\GenericRepository.pdb

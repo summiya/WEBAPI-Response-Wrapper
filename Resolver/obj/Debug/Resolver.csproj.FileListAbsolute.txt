@@ -1,0 +1,71 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Resolver.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Resolver.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\obj\Debug\Resolver.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\obj\Debug\Resolver.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Unity.Mvc3.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Resolver.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Newtonsoft.Json.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Net.Http.Formatting.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.Mvc.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.WebPages.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.WebPages.Razor.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.Razor.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\Newtonsoft.Json.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Net.Http.Formatting.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.Mvc.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.WebPages.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.WebPages.Razor.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.Razor.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\Resolver\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Resolver.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Resolver.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Unity.Mvc3.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\obj\Debug\Resolver.dll
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\obj\Debug\Resolver.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Resolver.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Resolver.pdb
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Unity.Mvc3.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\ResponseAPI\Resolver\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\user\Desktop\ResponseAPI\Resolver\obj\Debug\Resolver.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\Resolver\obj\Debug\Resolver.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\Resolver\obj\Debug\Resolver.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\Resolver\obj\Debug\Resolver.dll
+C:\Users\user\Desktop\ResponseAPI\Resolver\obj\Debug\Resolver.pdb

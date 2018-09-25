@@ -1,0 +1,57 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\MapperUtility.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\MapperUtility.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\AutoMapper.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\System.ValueTuple.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\BusinessEntities.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\DataBase.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\AutoMapper.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\AutoMapper.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\System.ValueTuple.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\bin\Debug\EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\MapperUtility.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\MapperUtility.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\AutoMapper.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\AutoMapper.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\AutoMapper.xml
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\MapperUtility\obj\Debug\MapperUtility.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\MapperUtility.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\MapperUtility.pdb
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\AutoMapper.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\AutoMapper.pdb
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\AutoMapper.xml
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\obj\Debug\MapperUtility.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\obj\Debug\MapperUtility.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\obj\Debug\MapperUtility.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\obj\Debug\MapperUtility.dll
+C:\Users\user\Desktop\ResponseAPI\MapperUtility\obj\Debug\MapperUtility.pdb

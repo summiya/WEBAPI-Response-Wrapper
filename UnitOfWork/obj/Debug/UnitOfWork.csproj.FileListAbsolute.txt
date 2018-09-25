@@ -1,0 +1,84 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\UnitOfWork.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\UnitOfWork.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\UnitOfWork.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\DataBase.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\GenericRepository.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Resolver.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.Unity.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\BusinessEntities.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\DataBase.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\DataBase.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\GenericRepository.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\GenericRepository.dll.config
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Resolver.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.Unity.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.csprojAssemblyReference.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.csproj.CopyComplete
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\UnitOfWork\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.csprojAssemblyReference.cache
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\UnitOfWork.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\UnitOfWork.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\UnitOfWork.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\GenericRepository.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Resolver.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\GenericRepository.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Resolver.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\AkshaakWebAPI\UnitOfWork\obj\Debug\UnitOfWork.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\UnitOfWork.dll.config
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\UnitOfWork.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\UnitOfWork.pdb
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\DataBase.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\EntityFramework.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\GenericRepository.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Resolver.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\DataBase.pdb
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\DataBase.dll.config
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\GenericRepository.pdb
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\GenericRepository.dll.config
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Resolver.pdb
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Resolver.dll.config
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\EntityFramework.xml
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\obj\Debug\UnitOfWork.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\obj\Debug\UnitOfWork.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\obj\Debug\UnitOfWork.csproj.CopyComplete
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\obj\Debug\UnitOfWork.dll
+C:\Users\user\Desktop\ResponseAPI\UnitOfWork\obj\Debug\UnitOfWork.pdb

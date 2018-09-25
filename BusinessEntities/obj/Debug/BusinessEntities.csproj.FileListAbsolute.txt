@@ -1,0 +1,16 @@
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessEntities\bin\Debug\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessEntities\bin\Debug\BusinessEntities.pdb
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessEntities\obj\Debug\BusinessEntities.dll
+D:\ASP.NET\ASP.NET MVC PROJECTS\AkshaakWebAPI\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\AkshaakWebAPI\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\user\Desktop\ResponseAPI\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\user\Desktop\ResponseAPI\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ResponseAPI\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\user\Desktop\ResponseAPI\BusinessEntities\obj\Debug\BusinessEntities.pdb

@@ -1,0 +1,1573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AkShaakModelStoreContainer" CdmEntityContainer="AkShaakEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="AkShaakModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="AkShaakModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="AkShaakModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="AkShaakModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="AkShaakModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="AkShaakModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="AdminRegistrations">
+      <EntityTypeMapping TypeName="AkShaakModel.AdminRegistration">
+        <MappingFragment StoreEntitySet="AdminRegistration">
+          <ScalarProperty Name="admRegIsActive" ColumnName="admRegIsActive" />
+          <ScalarProperty Name="admRegIsDeleted" ColumnName="admRegIsDeleted" />
+          <ScalarProperty Name="admRegModifiedBy" ColumnName="admRegModifiedBy" />
+          <ScalarProperty Name="admRegModifiedOn" ColumnName="admRegModifiedOn" />
+          <ScalarProperty Name="admRegCreatedBy" ColumnName="admRegCreatedBy" />
+          <ScalarProperty Name="admRegCreatedOn" ColumnName="admRegCreatedOn" />
+          <ScalarProperty Name="admRegDOB" ColumnName="admRegDOB" />
+          <ScalarProperty Name="admRegImg" ColumnName="admRegImg" />
+          <ScalarProperty Name="admRegLastName" ColumnName="admRegLastName" />
+          <ScalarProperty Name="admRegFirstName" ColumnName="admRegFirstName" />
+          <ScalarProperty Name="admRegID" ColumnName="admRegID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Attributes">
+      <EntityTypeMapping TypeName="AkShaakModel.Attribute">
+        <MappingFragment StoreEntitySet="Attributes">
+          <ScalarProperty Name="attIsActive" ColumnName="attIsActive" />
+          <ScalarProperty Name="attIsDeleted" ColumnName="attIsDeleted" />
+          <ScalarProperty Name="attModifiedBy" ColumnName="attModifiedBy" />
+          <ScalarProperty Name="attModifiedOn" ColumnName="attModifiedOn" />
+          <ScalarProperty Name="attCreatedBy" ColumnName="attCreatedBy" />
+          <ScalarProperty Name="attCreatedOn" ColumnName="attCreatedOn" />
+          <ScalarProperty Name="attSeoName" ColumnName="attSeoName" />
+          <ScalarProperty Name="attPosition" ColumnName="attPosition" />
+          <ScalarProperty Name="attImg" ColumnName="attImg" />
+          <ScalarProperty Name="attDescription" ColumnName="attDescription" />
+          <ScalarProperty Name="attName" ColumnName="attName" />
+          <ScalarProperty Name="attID" ColumnName="attID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttributesOptions">
+      <EntityTypeMapping TypeName="AkShaakModel.AttributesOption">
+        <MappingFragment StoreEntitySet="AttributesOption">
+          <ScalarProperty Name="attOptIsActive" ColumnName="attOptIsActive" />
+          <ScalarProperty Name="attOptIsDeleted" ColumnName="attOptIsDeleted" />
+          <ScalarProperty Name="attOptModifiedBy" ColumnName="attOptModifiedBy" />
+          <ScalarProperty Name="attOptModifiedOn" ColumnName="attOptModifiedOn" />
+          <ScalarProperty Name="attOptCreatedBy" ColumnName="attOptCreatedBy" />
+          <ScalarProperty Name="attOptCreatedOn" ColumnName="attOptCreatedOn" />
+          <ScalarProperty Name="attOptType" ColumnName="attOptType" />
+          <ScalarProperty Name="attOptSeoName" ColumnName="attOptSeoName" />
+          <ScalarProperty Name="attOptPosition" ColumnName="attOptPosition" />
+          <ScalarProperty Name="attOptPrice" ColumnName="attOptPrice" />
+          <ScalarProperty Name="attOptQuantity" ColumnName="attOptQuantity" />
+          <ScalarProperty Name="attOptImg" ColumnName="attOptImg" />
+          <ScalarProperty Name="attOptDescription" ColumnName="attOptDescription" />
+          <ScalarProperty Name="attOptName" ColumnName="attOptName" />
+          <ScalarProperty Name="attID" ColumnName="attID" />
+          <ScalarProperty Name="attOptID" ColumnName="attOptID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Badges">
+      <EntityTypeMapping TypeName="AkShaakModel.Badge">
+        <MappingFragment StoreEntitySet="Badges">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="BadgeDescription" ColumnName="BadgeDescription" />
+          <ScalarProperty Name="BadgeName" ColumnName="BadgeName" />
+          <ScalarProperty Name="BadgeId" ColumnName="BadgeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CartWhishlistFavroties">
+      <EntityTypeMapping TypeName="AkShaakModel.CartWhishlistFavroty">
+        <MappingFragment StoreEntitySet="CartWhishlistFavroties">
+          <ScalarProperty Name="cusCarInfCreatedBy" ColumnName="cusCarInfCreatedBy" />
+          <ScalarProperty Name="cusCarInfCreatedOn" ColumnName="cusCarInfCreatedOn" />
+          <ScalarProperty Name="carDeliveryType" ColumnName="carDeliveryType" />
+          <ScalarProperty Name="carWhiFavType" ColumnName="carWhiFavType" />
+          <ScalarProperty Name="carWhiFavQty" ColumnName="carWhiFavQty" />
+          <ScalarProperty Name="invVarID" ColumnName="invVarID" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="carWhiFavID" ColumnName="carWhiFavID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="AkShaakModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="catIsActive" ColumnName="catIsActive" />
+          <ScalarProperty Name="catIsDeleted" ColumnName="catIsDeleted" />
+          <ScalarProperty Name="catModifiedBy" ColumnName="catModifiedBy" />
+          <ScalarProperty Name="catModifiedOn" ColumnName="catModifiedOn" />
+          <ScalarProperty Name="catCreatedBy" ColumnName="catCreatedBy" />
+          <ScalarProperty Name="catCreatedOn" ColumnName="catCreatedOn" />
+          <ScalarProperty Name="catIcon" ColumnName="catIcon" />
+          <ScalarProperty Name="catSeoName" ColumnName="catSeoName" />
+          <ScalarProperty Name="catChildrenCount" ColumnName="catChildrenCount" />
+          <ScalarProperty Name="catLevel" ColumnName="catLevel" />
+          <ScalarProperty Name="catPosition" ColumnName="catPosition" />
+          <ScalarProperty Name="catParentID" ColumnName="catParentID" />
+          <ScalarProperty Name="catImg" ColumnName="catImg" />
+          <ScalarProperty Name="catDescriptionAr" ColumnName="catDescriptionAr" />
+          <ScalarProperty Name="catDescription" ColumnName="catDescription" />
+          <ScalarProperty Name="catNameAr" ColumnName="catNameAr" />
+          <ScalarProperty Name="catName" ColumnName="catName" />
+          <ScalarProperty Name="catID" ColumnName="catID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryMappings">
+      <EntityTypeMapping TypeName="AkShaakModel.CategoryMapping">
+        <MappingFragment StoreEntitySet="CategoryMapping">
+          <ScalarProperty Name="catMapIsActive" ColumnName="catMapIsActive" />
+          <ScalarProperty Name="catMapIsDeleted" ColumnName="catMapIsDeleted" />
+          <ScalarProperty Name="catMapModifiedBy" ColumnName="catMapModifiedBy" />
+          <ScalarProperty Name="catMapModifiedOn" ColumnName="catMapModifiedOn" />
+          <ScalarProperty Name="catMapCreatedBy" ColumnName="catMapCreatedBy" />
+          <ScalarProperty Name="catMapCreatedOn" ColumnName="catMapCreatedOn" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="catID" ColumnName="catID" />
+          <ScalarProperty Name="catMapID" ColumnName="catMapID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CDeliveryDetails">
+      <EntityTypeMapping TypeName="AkShaakModel.CDeliveryDetail">
+        <MappingFragment StoreEntitySet="CDeliveryDetails">
+          <ScalarProperty Name="cdelCreatedBy" ColumnName="cdelCreatedBy" />
+          <ScalarProperty Name="cdelCreatedDate" ColumnName="cdelCreatedDate" />
+          <ScalarProperty Name="cdelCode" ColumnName="cdelCode" />
+          <ScalarProperty Name="cdelError" ColumnName="cdelError" />
+          <ScalarProperty Name="cdelCarryID" ColumnName="cdelCarryID" />
+          <ScalarProperty Name="cdelStatus" ColumnName="cdelStatus" />
+          <ScalarProperty Name="cdelStoreID" ColumnName="cdelStoreID" />
+          <ScalarProperty Name="cdelOrderdetID" ColumnName="cdelOrderdetID" />
+          <ScalarProperty Name="cdelOrderID" ColumnName="cdelOrderID" />
+          <ScalarProperty Name="cDeliveryID" ColumnName="cDeliveryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="AkShaakModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="citIsActive" ColumnName="citIsActive" />
+          <ScalarProperty Name="citIsDeleted" ColumnName="citIsDeleted" />
+          <ScalarProperty Name="citModifiedBy" ColumnName="citModifiedBy" />
+          <ScalarProperty Name="citModifiedOn" ColumnName="citModifiedOn" />
+          <ScalarProperty Name="citCreatedBy" ColumnName="citCreatedBy" />
+          <ScalarProperty Name="citCreatedOn" ColumnName="citCreatedOn" />
+          <ScalarProperty Name="citNameAr" ColumnName="citNameAr" />
+          <ScalarProperty Name="citName" ColumnName="citName" />
+          <ScalarProperty Name="staID" ColumnName="staID" />
+          <ScalarProperty Name="citID" ColumnName="citID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CityAreas">
+      <EntityTypeMapping TypeName="AkShaakModel.CityArea">
+        <MappingFragment StoreEntitySet="CityArea">
+          <ScalarProperty Name="AddrAreaNameAr" ColumnName="AddrAreaNameAr" />
+          <ScalarProperty Name="AddrAreaNameEn" ColumnName="AddrAreaNameEn" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactUsEmails">
+      <EntityTypeMapping TypeName="AkShaakModel.ContactUsEmail">
+        <MappingFragment StoreEntitySet="ContactUsEmail">
+          <ScalarProperty Name="contactUsCreatedDate" ColumnName="contactUsCreatedDate" />
+          <ScalarProperty Name="contactUsMessage" ColumnName="contactUsMessage" />
+          <ScalarProperty Name="contactUsMobileNo" ColumnName="contactUsMobileNo" />
+          <ScalarProperty Name="contactUsEmail1" ColumnName="contactUsEmail" />
+          <ScalarProperty Name="contactUsName" ColumnName="contactUsName" />
+          <ScalarProperty Name="contactUsID" ColumnName="contactUsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="AkShaakModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="couIsActive" ColumnName="couIsActive" />
+          <ScalarProperty Name="couIsDeleted" ColumnName="couIsDeleted" />
+          <ScalarProperty Name="couModifiedBy" ColumnName="couModifiedBy" />
+          <ScalarProperty Name="couModifiedOn" ColumnName="couModifiedOn" />
+          <ScalarProperty Name="couCreatedBy" ColumnName="couCreatedBy" />
+          <ScalarProperty Name="couCreatedOn" ColumnName="couCreatedOn" />
+          <ScalarProperty Name="couIcon" ColumnName="couIcon" />
+          <ScalarProperty Name="couNameAr" ColumnName="couNameAr" />
+          <ScalarProperty Name="couName" ColumnName="couName" />
+          <ScalarProperty Name="couCode" ColumnName="couCode" />
+          <ScalarProperty Name="couID" ColumnName="couID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="AkShaakModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="curIsActive" ColumnName="curIsActive" />
+          <ScalarProperty Name="curIsDeleted" ColumnName="curIsDeleted" />
+          <ScalarProperty Name="curModifiedBy" ColumnName="curModifiedBy" />
+          <ScalarProperty Name="curModifiedOn" ColumnName="curModifiedOn" />
+          <ScalarProperty Name="curCreatedBy" ColumnName="curCreatedBy" />
+          <ScalarProperty Name="curCreatedOn" ColumnName="curCreatedOn" />
+          <ScalarProperty Name="curIcon" ColumnName="curIcon" />
+          <ScalarProperty Name="curNameAr" ColumnName="curNameAr" />
+          <ScalarProperty Name="curName" ColumnName="curName" />
+          <ScalarProperty Name="curCode" ColumnName="curCode" />
+          <ScalarProperty Name="curCountryNameAr" ColumnName="curCountryNameAr" />
+          <ScalarProperty Name="curCountryName" ColumnName="curCountryName" />
+          <ScalarProperty Name="curID" ColumnName="curID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAddresses">
+      <EntityTypeMapping TypeName="AkShaakModel.CustomerAddress">
+        <MappingFragment StoreEntitySet="CustomerAddress">
+          <ScalarProperty Name="cusAddIsActive" ColumnName="cusAddIsActive" />
+          <ScalarProperty Name="cusAddIsDeleted" ColumnName="cusAddIsDeleted" />
+          <ScalarProperty Name="cusAddModifiedBy" ColumnName="cusAddModifiedBy" />
+          <ScalarProperty Name="cusAddModifiedOn" ColumnName="cusAddModifiedOn" />
+          <ScalarProperty Name="cusAddCreatedBy" ColumnName="cusAddCreatedBy" />
+          <ScalarProperty Name="cusAddCreatedOn" ColumnName="cusAddCreatedOn" />
+          <ScalarProperty Name="cusAddMobileNo" ColumnName="cusAddMobileNo" />
+          <ScalarProperty Name="cusAddLastName" ColumnName="cusAddLastName" />
+          <ScalarProperty Name="cusAddFirstName" ColumnName="cusAddFirstName" />
+          <ScalarProperty Name="cusAddFloor" ColumnName="cusAddFloor" />
+          <ScalarProperty Name="cusAddStreet" ColumnName="cusAddStreet" />
+          <ScalarProperty Name="cusAddType" ColumnName="cusAddType" />
+          <ScalarProperty Name="cusAddLatitude" ColumnName="cusAddLatitude" />
+          <ScalarProperty Name="cusAddLongitude" ColumnName="cusAddLongitude" />
+          <ScalarProperty Name="cusAddAptNo" ColumnName="cusAddAptNo" />
+          <ScalarProperty Name="cusAddBuilding" ColumnName="cusAddBuilding" />
+          <ScalarProperty Name="cusAddArea" ColumnName="cusAddArea" />
+          <ScalarProperty Name="cusAddZipcode" ColumnName="cusAddZipcode" />
+          <ScalarProperty Name="cusAddCountry" ColumnName="cusAddCountry" />
+          <ScalarProperty Name="cusAddState" ColumnName="cusAddState" />
+          <ScalarProperty Name="cusAddCity" ColumnName="cusAddCity" />
+          <ScalarProperty Name="cusAddBVType" ColumnName="cusAddBVType" />
+          <ScalarProperty Name="cusAddAddress" ColumnName="cusAddAddress" />
+          <ScalarProperty Name="citID" ColumnName="citID" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="cusAddID" ColumnName="cusAddID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerCardInfoes">
+      <EntityTypeMapping TypeName="AkShaakModel.CustomerCardInfo">
+        <MappingFragment StoreEntitySet="CustomerCardInfo">
+          <ScalarProperty Name="cusCarInfIsActive" ColumnName="cusCarInfIsActive" />
+          <ScalarProperty Name="cusCarInfIsDeleted" ColumnName="cusCarInfIsDeleted" />
+          <ScalarProperty Name="cusCarInfModifiedBy" ColumnName="cusCarInfModifiedBy" />
+          <ScalarProperty Name="cusCarInfModifieOn" ColumnName="cusCarInfModifieOn" />
+          <ScalarProperty Name="cusCarInfCreatedBy" ColumnName="cusCarInfCreatedBy" />
+          <ScalarProperty Name="cusCarInfCreatedOn" ColumnName="cusCarInfCreatedOn" />
+          <ScalarProperty Name="cusCarInfExpYear" ColumnName="cusCarInfExpYear" />
+          <ScalarProperty Name="cusCarInfExpMonth" ColumnName="cusCarInfExpMonth" />
+          <ScalarProperty Name="cusCarInfCardName" ColumnName="cusCarInfCardName" />
+          <ScalarProperty Name="cusCarInfCardNo" ColumnName="cusCarInfCardNo" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="cusCarInfID" ColumnName="cusCarInfID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="AkShaakModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="cusIsActive" ColumnName="cusIsActive" />
+          <ScalarProperty Name="cusIsDeleted" ColumnName="cusIsDeleted" />
+          <ScalarProperty Name="cusIsGuest" ColumnName="cusIsGuest" />
+          <ScalarProperty Name="cusModifiedBy" ColumnName="cusModifiedBy" />
+          <ScalarProperty Name="cusModifiedOn" ColumnName="cusModifiedOn" />
+          <ScalarProperty Name="cusCreatedOn" ColumnName="cusCreatedOn" />
+          <ScalarProperty Name="cusGender" ColumnName="cusGender" />
+          <ScalarProperty Name="cusDOB" ColumnName="cusDOB" />
+          <ScalarProperty Name="cusLastName" ColumnName="cusLastName" />
+          <ScalarProperty Name="cusFirstName" ColumnName="cusFirstName" />
+          <ScalarProperty Name="resID" ColumnName="resID" />
+          <ScalarProperty Name="natID" ColumnName="natID" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DEDMasters">
+      <EntityTypeMapping TypeName="AkShaakModel.DEDMaster">
+        <MappingFragment StoreEntitySet="DEDMaster">
+          <ScalarProperty Name="dedIsActive" ColumnName="dedIsActive" />
+          <ScalarProperty Name="dedIsDeleted" ColumnName="dedIsDeleted" />
+          <ScalarProperty Name="dedModifiedBy" ColumnName="dedModifiedBy" />
+          <ScalarProperty Name="dedModifiedOn" ColumnName="dedModifiedOn" />
+          <ScalarProperty Name="dedCreatedBy" ColumnName="dedCreatedBy" />
+          <ScalarProperty Name="dedCreatedOn" ColumnName="dedCreatedOn" />
+          <ScalarProperty Name="dedName" ColumnName="dedName" />
+          <ScalarProperty Name="dedID" ColumnName="dedID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discounts">
+      <EntityTypeMapping TypeName="AkShaakModel.Discount">
+        <MappingFragment StoreEntitySet="Discount">
+          <ScalarProperty Name="disIsActive" ColumnName="disIsActive" />
+          <ScalarProperty Name="disIsDeleted" ColumnName="disIsDeleted" />
+          <ScalarProperty Name="disModifiedBy" ColumnName="disModifiedBy" />
+          <ScalarProperty Name="disModifiedOn" ColumnName="disModifiedOn" />
+          <ScalarProperty Name="disCreatedBy" ColumnName="disCreatedBy" />
+          <ScalarProperty Name="disCreatedOn" ColumnName="disCreatedOn" />
+          <ScalarProperty Name="disValue" ColumnName="disValue" />
+          <ScalarProperty Name="disType" ColumnName="disType" />
+          <ScalarProperty Name="disName" ColumnName="disName" />
+          <ScalarProperty Name="disID" ColumnName="disID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailSettings">
+      <EntityTypeMapping TypeName="AkShaakModel.EmailSetting">
+        <MappingFragment StoreEntitySet="EmailSettings">
+          <ScalarProperty Name="smtpModifiedBy" ColumnName="smtpModifiedBy" />
+          <ScalarProperty Name="smtpModifiedOn" ColumnName="smtpModifiedOn" />
+          <ScalarProperty Name="smtpCreatedBy" ColumnName="smtpCreatedBy" />
+          <ScalarProperty Name="smtpCreatedOn" ColumnName="smtpCreatedOn" />
+          <ScalarProperty Name="smsApiKey" ColumnName="smsApiKey" />
+          <ScalarProperty Name="smsLink" ColumnName="smsLink" />
+          <ScalarProperty Name="smsPassword" ColumnName="smsPassword" />
+          <ScalarProperty Name="smsUsername" ColumnName="smsUsername" />
+          <ScalarProperty Name="smtpSSL" ColumnName="smtpSSL" />
+          <ScalarProperty Name="smtpPassword" ColumnName="smtpPassword" />
+          <ScalarProperty Name="smtpEmail" ColumnName="smtpEmail" />
+          <ScalarProperty Name="smtpPort" ColumnName="smtpPort" />
+          <ScalarProperty Name="smtpHost" ColumnName="smtpHost" />
+          <ScalarProperty Name="settingId" ColumnName="settingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExchangeReturnPols">
+      <EntityTypeMapping TypeName="AkShaakModel.ExchangeReturnPol">
+        <MappingFragment StoreEntitySet="ExchangeReturnPol">
+          <ScalarProperty Name="excRetPolIsActive" ColumnName="excRetPolIsActive" />
+          <ScalarProperty Name="excRetPolIsDeleted" ColumnName="excRetPolIsDeleted" />
+          <ScalarProperty Name="excRetPolModifiedBy" ColumnName="excRetPolModifiedBy" />
+          <ScalarProperty Name="excRetPolModifiedOn" ColumnName="excRetPolModifiedOn" />
+          <ScalarProperty Name="excRetPolCreatedBy" ColumnName="excRetPolCreatedBy" />
+          <ScalarProperty Name="excRetPolCreatedOn" ColumnName="excRetPolCreatedOn" />
+          <ScalarProperty Name="excRetPolNameAr" ColumnName="excRetPolNameAr" />
+          <ScalarProperty Name="excRetPolName" ColumnName="excRetPolName" />
+          <ScalarProperty Name="excRetPolID" ColumnName="excRetPolID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExchangeReturnTimes">
+      <EntityTypeMapping TypeName="AkShaakModel.ExchangeReturnTime">
+        <MappingFragment StoreEntitySet="ExchangeReturnTime">
+          <ScalarProperty Name="excRetTimIsActive" ColumnName="excRetTimIsActive" />
+          <ScalarProperty Name="excRetTimIsDeleted" ColumnName="excRetTimIsDeleted" />
+          <ScalarProperty Name="excRetTimModifiedBy" ColumnName="excRetTimModifiedBy" />
+          <ScalarProperty Name="excRetTimModifiedOn" ColumnName="excRetTimModifiedOn" />
+          <ScalarProperty Name="excRetTimCreatedBy" ColumnName="excRetTimCreatedBy" />
+          <ScalarProperty Name="excRetTimCreatedOn" ColumnName="excRetTimCreatedOn" />
+          <ScalarProperty Name="excRetTimDays" ColumnName="excRetTimDays" />
+          <ScalarProperty Name="excRetTimNameAr" ColumnName="excRetTimNameAr" />
+          <ScalarProperty Name="excRetTimName" ColumnName="excRetTimName" />
+          <ScalarProperty Name="excRetPolID" ColumnName="excRetPolID" />
+          <ScalarProperty Name="excRetTimID" ColumnName="excRetTimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryProducts">
+      <EntityTypeMapping TypeName="AkShaakModel.InventoryProduct">
+        <MappingFragment StoreEntitySet="InventoryProduct">
+          <ScalarProperty Name="invProIsActive" ColumnName="invProIsActive" />
+          <ScalarProperty Name="invProIsDeleted" ColumnName="invProIsDeleted" />
+          <ScalarProperty Name="invProModifiedBy" ColumnName="invProModifiedBy" />
+          <ScalarProperty Name="invProModifiedOn" ColumnName="invProModifiedOn" />
+          <ScalarProperty Name="invProCreatedBy" ColumnName="invProCreatedBy" />
+          <ScalarProperty Name="invProCreatedOn" ColumnName="invProCreatedOn" />
+          <ScalarProperty Name="invProMaxNotifQty" ColumnName="invProMaxNotifQty" />
+          <ScalarProperty Name="invProMaxCartQty" ColumnName="invProMaxCartQty" />
+          <ScalarProperty Name="invProMinCartQty" ColumnName="invProMinCartQty" />
+          <ScalarProperty Name="invProToOSQty" ColumnName="invProToOSQty" />
+          <ScalarProperty Name="invProDamagedQty" ColumnName="invProDamagedQty" />
+          <ScalarProperty Name="invProReturnedQty" ColumnName="invProReturnedQty" />
+          <ScalarProperty Name="invProSalesQty" ColumnName="invProSalesQty" />
+          <ScalarProperty Name="invProStockQty" ColumnName="invProStockQty" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="invProID" ColumnName="invProID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryProductLogs">
+      <EntityTypeMapping TypeName="AkShaakModel.InventoryProductLog">
+        <MappingFragment StoreEntitySet="InventoryProductLog">
+          <ScalarProperty Name="invProLogIsActive" ColumnName="invProLogIsActive" />
+          <ScalarProperty Name="invProLogIsDeleted" ColumnName="invProLogIsDeleted" />
+          <ScalarProperty Name="invProLogModifiedBy" ColumnName="invProLogModifiedBy" />
+          <ScalarProperty Name="invProLogModifiedOn" ColumnName="invProLogModifiedOn" />
+          <ScalarProperty Name="invProLogCreatedBy" ColumnName="invProLogCreatedBy" />
+          <ScalarProperty Name="invProLogCreatedOn" ColumnName="invProLogCreatedOn" />
+          <ScalarProperty Name="invProLogDate" ColumnName="invProLogDate" />
+          <ScalarProperty Name="invProLogQty" ColumnName="invProLogQty" />
+          <ScalarProperty Name="invVarID" ColumnName="invVarID" />
+          <ScalarProperty Name="invProLogType" ColumnName="invProLogType" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="invProLogID" ColumnName="invProLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryVariants">
+      <EntityTypeMapping TypeName="AkShaakModel.InventoryVariant">
+        <MappingFragment StoreEntitySet="InventoryVariant">
+          <ScalarProperty Name="invVarIsActive" ColumnName="invVarIsActive" />
+          <ScalarProperty Name="invVarIsDeleted" ColumnName="invVarIsDeleted" />
+          <ScalarProperty Name="invVarModifiedBy" ColumnName="invVarModifiedBy" />
+          <ScalarProperty Name="invVarModifiedOn" ColumnName="invVarModifiedOn" />
+          <ScalarProperty Name="invVarCreatedBy" ColumnName="invVarCreatedBy" />
+          <ScalarProperty Name="invVarCreatedOn" ColumnName="invVarCreatedOn" />
+          <ScalarProperty Name="invVarFinalAmount" ColumnName="invVarFinalAmount" />
+          <ScalarProperty Name="invVarDisAmount" ColumnName="invVarDisAmount" />
+          <ScalarProperty Name="invVarDisValue" ColumnName="invVarDisValue" />
+          <ScalarProperty Name="invVarPrice" ColumnName="invVarPrice" />
+          <ScalarProperty Name="invVarPerDayQty" ColumnName="invVarPerDayQty" />
+          <ScalarProperty Name="invVarQty" ColumnName="invVarQty" />
+          <ScalarProperty Name="proConID" ColumnName="proConID" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="invVarID" ColumnName="invVarID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="AkShaakModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="invIsDeleted" ColumnName="invIsDeleted" />
+          <ScalarProperty Name="invIsActive" ColumnName="invIsActive" />
+          <ScalarProperty Name="invModifiedBy" ColumnName="invModifiedBy" />
+          <ScalarProperty Name="invModifiedDate" ColumnName="invModifiedDate" />
+          <ScalarProperty Name="invCreatedBy" ColumnName="invCreatedBy" />
+          <ScalarProperty Name="invCreatedDate" ColumnName="invCreatedDate" />
+          <ScalarProperty Name="invStoID" ColumnName="invStoID" />
+          <ScalarProperty Name="invOrderID" ColumnName="invOrderID" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="AkShaakModel.Language">
+        <MappingFragment StoreEntitySet="Languages">
+          <ScalarProperty Name="lanIsActive" ColumnName="lanIsActive" />
+          <ScalarProperty Name="lanIcon" ColumnName="lanIcon" />
+          <ScalarProperty Name="lanNameAr" ColumnName="lanNameAr" />
+          <ScalarProperty Name="lanName" ColumnName="lanName" />
+          <ScalarProperty Name="lanCode" ColumnName="lanCode" />
+          <ScalarProperty Name="lanID" ColumnName="lanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="AkShaakModel.Login">
+        <MappingFragment StoreEntitySet="Logins">
+          <ScalarProperty Name="cusLogIsActive" ColumnName="cusLogIsActive" />
+          <ScalarProperty Name="cusLogIsDeleted" ColumnName="cusLogIsDeleted" />
+          <ScalarProperty Name="cusLogModifiedOn" ColumnName="cusLogModifiedOn" />
+          <ScalarProperty Name="cusLogCreatedOn" ColumnName="cusLogCreatedOn" />
+          <ScalarProperty Name="cusOTP" ColumnName="cusOTP" />
+          <ScalarProperty Name="cusLogIsVerified" ColumnName="cusLogIsVerified" />
+          <ScalarProperty Name="cusLogIsOnline" ColumnName="cusLogIsOnline" />
+          <ScalarProperty Name="cusLogType" ColumnName="cusLogType" />
+          <ScalarProperty Name="cusLogMobile" ColumnName="cusLogMobile" />
+          <ScalarProperty Name="cusLogEmail" ColumnName="cusLogEmail" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="cusLogID" ColumnName="cusLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailTemplateContents">
+      <EntityTypeMapping TypeName="AkShaakModel.MailTemplateContent">
+        <MappingFragment StoreEntitySet="MailTemplateContent">
+          <ScalarProperty Name="smsAR" ColumnName="smsAR" />
+          <ScalarProperty Name="bodyAR" ColumnName="bodyAR" />
+          <ScalarProperty Name="subjectAR" ColumnName="subjectAR" />
+          <ScalarProperty Name="smsEN" ColumnName="smsEN" />
+          <ScalarProperty Name="bodyEN" ColumnName="bodyEN" />
+          <ScalarProperty Name="subjectEN" ColumnName="subjectEN" />
+          <ScalarProperty Name="mailerCode" ColumnName="mailerCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuMappings">
+      <EntityTypeMapping TypeName="AkShaakModel.MenuMapping">
+        <MappingFragment StoreEntitySet="MenuMapping">
+          <ScalarProperty Name="menMapIsActive" ColumnName="menMapIsActive" />
+          <ScalarProperty Name="menMapIsDeleted" ColumnName="menMapIsDeleted" />
+          <ScalarProperty Name="menMapModifiedBy" ColumnName="menMapModifiedBy" />
+          <ScalarProperty Name="menMapModifiedOn" ColumnName="menMapModifiedOn" />
+          <ScalarProperty Name="menMapCreatedBy" ColumnName="menMapCreatedBy" />
+          <ScalarProperty Name="menMapCreatedOn" ColumnName="menMapCreatedOn" />
+          <ScalarProperty Name="menID" ColumnName="menID" />
+          <ScalarProperty Name="rolID" ColumnName="rolID" />
+          <ScalarProperty Name="menMapID" ColumnName="menMapID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="AkShaakModel.Menu">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="menIsActive" ColumnName="menIsActive" />
+          <ScalarProperty Name="menIsDeleted" ColumnName="menIsDeleted" />
+          <ScalarProperty Name="menModifiedBy" ColumnName="menModifiedBy" />
+          <ScalarProperty Name="menModifiedOn" ColumnName="menModifiedOn" />
+          <ScalarProperty Name="menCreatedBy" ColumnName="menCreatedBy" />
+          <ScalarProperty Name="menCreatedOn" ColumnName="menCreatedOn" />
+          <ScalarProperty Name="menParentID" ColumnName="menParentID" />
+          <ScalarProperty Name="menIcon" ColumnName="menIcon" />
+          <ScalarProperty Name="menLink" ColumnName="menLink" />
+          <ScalarProperty Name="menName" ColumnName="menName" />
+          <ScalarProperty Name="menID" ColumnName="menID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Merchants">
+      <EntityTypeMapping TypeName="AkShaakModel.Merchant">
+        <MappingFragment StoreEntitySet="Merchant">
+          <ScalarProperty Name="merIsActive" ColumnName="merIsActive" />
+          <ScalarProperty Name="merIsDeleted" ColumnName="merIsDeleted" />
+          <ScalarProperty Name="merModifiedBy" ColumnName="merModifiedBy" />
+          <ScalarProperty Name="merModifiedOn" ColumnName="merModifiedOn" />
+          <ScalarProperty Name="merCreatedBy" ColumnName="merCreatedBy" />
+          <ScalarProperty Name="merCreatedOn" ColumnName="merCreatedOn" />
+          <ScalarProperty Name="merPlanRenewalDate" ColumnName="merPlanRenewalDate" />
+          <ScalarProperty Name="merPlanDate" ColumnName="merPlanDate" />
+          <ScalarProperty Name="pacID" ColumnName="pacID" />
+          <ScalarProperty Name="merPayment" ColumnName="merPayment" />
+          <ScalarProperty Name="merProCount" ColumnName="merProCount" />
+          <ScalarProperty Name="merCatCount" ColumnName="merCatCount" />
+          <ScalarProperty Name="merStoreCount" ColumnName="merStoreCount" />
+          <ScalarProperty Name="merIsVerified" ColumnName="merIsVerified" />
+          <ScalarProperty Name="merImg" ColumnName="merImg" />
+          <ScalarProperty Name="merLogTypID" ColumnName="merLogTypID" />
+          <ScalarProperty Name="merLogTyp" ColumnName="merLogTyp" />
+          <ScalarProperty Name="merGender" ColumnName="merGender" />
+          <ScalarProperty Name="merDob" ColumnName="merDob" />
+          <ScalarProperty Name="merDesignation" ColumnName="merDesignation" />
+          <ScalarProperty Name="merLastName" ColumnName="merLastName" />
+          <ScalarProperty Name="merFirstName" ColumnName="merFirstName" />
+          <ScalarProperty Name="resID" ColumnName="resID" />
+          <ScalarProperty Name="natID" ColumnName="natID" />
+          <ScalarProperty Name="merID" ColumnName="merID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MerchantAddresses">
+      <EntityTypeMapping TypeName="AkShaakModel.MerchantAddress">
+        <MappingFragment StoreEntitySet="MerchantAddress">
+          <ScalarProperty Name="merAddIsActive" ColumnName="merAddIsActive" />
+          <ScalarProperty Name="merAddIsDeleted" ColumnName="merAddIsDeleted" />
+          <ScalarProperty Name="merAddModifiedBy" ColumnName="merAddModifiedBy" />
+          <ScalarProperty Name="merAddModifiedOn" ColumnName="merAddModifiedOn" />
+          <ScalarProperty Name="merAddCreatedBy" ColumnName="merAddCreatedBy" />
+          <ScalarProperty Name="merAddCreatedOn" ColumnName="merAddCreatedOn" />
+          <ScalarProperty Name="merAddType" ColumnName="merAddType" />
+          <ScalarProperty Name="merAddLandMark" ColumnName="merAddLandMark" />
+          <ScalarProperty Name="merAddArea" ColumnName="merAddArea" />
+          <ScalarProperty Name="merAddAptNo" ColumnName="merAddAptNo" />
+          <ScalarProperty Name="merAddBuildingNo" ColumnName="merAddBuildingNo" />
+          <ScalarProperty Name="merAddZipcode" ColumnName="merAddZipcode" />
+          <ScalarProperty Name="merAddCountry" ColumnName="merAddCountry" />
+          <ScalarProperty Name="merAddState" ColumnName="merAddState" />
+          <ScalarProperty Name="merAddCity" ColumnName="merAddCity" />
+          <ScalarProperty Name="merAddAddress" ColumnName="merAddAddress" />
+          <ScalarProperty Name="merID" ColumnName="merID" />
+          <ScalarProperty Name="merAddID" ColumnName="merAddID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MerchantBankDetails">
+      <EntityTypeMapping TypeName="AkShaakModel.MerchantBankDetail">
+        <MappingFragment StoreEntitySet="MerchantBankDetails">
+          <ScalarProperty Name="merBanAlternativePay" ColumnName="merBanAlternativePay" />
+          <ScalarProperty Name="merBanDetIsActive" ColumnName="merBanDetIsActive" />
+          <ScalarProperty Name="merBanDetIsDeleted" ColumnName="merBanDetIsDeleted" />
+          <ScalarProperty Name="merBanDetModifiedBy" ColumnName="merBanDetModifiedBy" />
+          <ScalarProperty Name="merBanDetModifiedOn" ColumnName="merBanDetModifiedOn" />
+          <ScalarProperty Name="merBanDetCreatedBy" ColumnName="merBanDetCreatedBy" />
+          <ScalarProperty Name="merBanDetCreatedOn" ColumnName="merBanDetCreatedOn" />
+          <ScalarProperty Name="merBanDetSWIFTCode" ColumnName="merBanDetSWIFTCode" />
+          <ScalarProperty Name="merBanDetIBANNo" ColumnName="merBanDetIBANNo" />
+          <ScalarProperty Name="merBanDetBranchName" ColumnName="merBanDetBranchName" />
+          <ScalarProperty Name="merBanDetBankName" ColumnName="merBanDetBankName" />
+          <ScalarProperty Name="merBanDetAccountName" ColumnName="merBanDetAccountName" />
+          <ScalarProperty Name="merID" ColumnName="merID" />
+          <ScalarProperty Name="merBanDetID" ColumnName="merBanDetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MerchantCardInfoes">
+      <EntityTypeMapping TypeName="AkShaakModel.MerchantCardInfo">
+        <MappingFragment StoreEntitySet="MerchantCardInfo">
+          <ScalarProperty Name="merCarInfIsActive" ColumnName="merCarInfIsActive" />
+          <ScalarProperty Name="merCarInfIsDeleted" ColumnName="merCarInfIsDeleted" />
+          <ScalarProperty Name="merCarInfModifiedBy" ColumnName="merCarInfModifiedBy" />
+          <ScalarProperty Name="merCarInfModifiedOn" ColumnName="merCarInfModifiedOn" />
+          <ScalarProperty Name="merCarInfCreatedBy" ColumnName="merCarInfCreatedBy" />
+          <ScalarProperty Name="merCarInfCreatedOn" ColumnName="merCarInfCreatedOn" />
+          <ScalarProperty Name="merCarInfExpYear" ColumnName="merCarInfExpYear" />
+          <ScalarProperty Name="merCarInfExpMonth" ColumnName="merCarInfExpMonth" />
+          <ScalarProperty Name="merCarInfCardName" ColumnName="merCarInfCardName" />
+          <ScalarProperty Name="merCarInfCardNo" ColumnName="merCarInfCardNo" />
+          <ScalarProperty Name="merID" ColumnName="merID" />
+          <ScalarProperty Name="merCarInfID" ColumnName="merCarInfID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessagesMains">
+      <EntityTypeMapping TypeName="AkShaakModel.MessagesMain">
+        <MappingFragment StoreEntitySet="MessagesMain">
+          <ScalarProperty Name="mesOrderNo" ColumnName="mesOrderNo" />
+          <ScalarProperty Name="mesIsReadMer" ColumnName="mesIsReadMer" />
+          <ScalarProperty Name="mesIsRead" ColumnName="mesIsRead" />
+          <ScalarProperty Name="mesIsActive" ColumnName="mesIsActive" />
+          <ScalarProperty Name="mesTypeID" ColumnName="mesTypeID" />
+          <ScalarProperty Name="mesCreatedDate" ColumnName="mesCreatedDate" />
+          <ScalarProperty Name="mesBy" ColumnName="mesBy" />
+          <ScalarProperty Name="mesTo" ColumnName="mesTo" />
+          <ScalarProperty Name="mesDetail" ColumnName="mesDetail" />
+          <ScalarProperty Name="mesSubject" ColumnName="mesSubject" />
+          <ScalarProperty Name="mesID" ColumnName="mesID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageThreads">
+      <EntityTypeMapping TypeName="AkShaakModel.MessageThread">
+        <MappingFragment StoreEntitySet="MessageThread">
+          <ScalarProperty Name="mesThreadOrderNo" ColumnName="mesThreadOrderNo" />
+          <ScalarProperty Name="mesThreadCreatedDate" ColumnName="mesThreadCreatedDate" />
+          <ScalarProperty Name="mesThreadBy" ColumnName="mesThreadBy" />
+          <ScalarProperty Name="mesThreadDetail" ColumnName="mesThreadDetail" />
+          <ScalarProperty Name="mesID" ColumnName="mesID" />
+          <ScalarProperty Name="mesThreadID" ColumnName="mesThreadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nationalities">
+      <EntityTypeMapping TypeName="AkShaakModel.Nationality">
+        <MappingFragment StoreEntitySet="Nationality">
+          <ScalarProperty Name="natIsActive" ColumnName="natIsActive" />
+          <ScalarProperty Name="natIsDeleted" ColumnName="natIsDeleted" />
+          <ScalarProperty Name="natModifiedBy" ColumnName="natModifiedBy" />
+          <ScalarProperty Name="natModifiedOn" ColumnName="natModifiedOn" />
+          <ScalarProperty Name="natCreatedBy" ColumnName="natCreatedBy" />
+          <ScalarProperty Name="natCreatedOn" ColumnName="natCreatedOn" />
+          <ScalarProperty Name="natNameAr" ColumnName="natNameAr" />
+          <ScalarProperty Name="natName" ColumnName="natName" />
+          <ScalarProperty Name="natID" ColumnName="natID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NGOMasters">
+      <EntityTypeMapping TypeName="AkShaakModel.NGOMaster">
+        <MappingFragment StoreEntitySet="NGOMaster">
+          <ScalarProperty Name="ngoIsActive" ColumnName="ngoIsActive" />
+          <ScalarProperty Name="ngoIsDeleted" ColumnName="ngoIsDeleted" />
+          <ScalarProperty Name="ngoModifiedBy" ColumnName="ngoModifiedBy" />
+          <ScalarProperty Name="ngoModifiedOn" ColumnName="ngoModifiedOn" />
+          <ScalarProperty Name="ngoCreatedBy" ColumnName="ngoCreatedBy" />
+          <ScalarProperty Name="ngoCreatedOn" ColumnName="ngoCreatedOn" />
+          <ScalarProperty Name="ngoImgName" ColumnName="ngoImgName" />
+          <ScalarProperty Name="ngoNameAr" ColumnName="ngoNameAr" />
+          <ScalarProperty Name="ngoName" ColumnName="ngoName" />
+          <ScalarProperty Name="ngoID" ColumnName="ngoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfferTypes">
+      <EntityTypeMapping TypeName="AkShaakModel.OfferType">
+        <MappingFragment StoreEntitySet="OfferType">
+          <ScalarProperty Name="offTypIsActive" ColumnName="offTypIsActive" />
+          <ScalarProperty Name="offTypIsDeleted" ColumnName="offTypIsDeleted" />
+          <ScalarProperty Name="offTypModifiedBy" ColumnName="offTypModifiedBy" />
+          <ScalarProperty Name="offTypModifiedOn" ColumnName="offTypModifiedOn" />
+          <ScalarProperty Name="offTypCreatedBy" ColumnName="offTypCreatedBy" />
+          <ScalarProperty Name="offTypCreatedOn" ColumnName="offTypCreatedOn" />
+          <ScalarProperty Name="offTypName" ColumnName="offTypName" />
+          <ScalarProperty Name="offTypID" ColumnName="offTypID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="AkShaakModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetails">
+          <ScalarProperty Name="ordDeliveryType" ColumnName="ordDeliveryType" />
+          <ScalarProperty Name="ordDetWingCorTyp" ColumnName="ordDetWingCorTyp" />
+          <ScalarProperty Name="ordDetDelNote" ColumnName="ordDetDelNote" />
+          <ScalarProperty Name="ordDelChargeOriginal" ColumnName="ordDelChargeOriginal" />
+          <ScalarProperty Name="ordDelCharges" ColumnName="ordDelCharges" />
+          <ScalarProperty Name="ordPersonalDel" ColumnName="ordPersonalDel" />
+          <ScalarProperty Name="ordDetIsActive" ColumnName="ordDetIsActive" />
+          <ScalarProperty Name="ordDetIsDeleted" ColumnName="ordDetIsDeleted" />
+          <ScalarProperty Name="ordDetStatus" ColumnName="ordDetStatus" />
+          <ScalarProperty Name="ordDetModifiedBy" ColumnName="ordDetModifiedBy" />
+          <ScalarProperty Name="ordDetModifiedOn" ColumnName="ordDetModifiedOn" />
+          <ScalarProperty Name="ordDetCreatedBy" ColumnName="ordDetCreatedBy" />
+          <ScalarProperty Name="ordDetCreatedOn" ColumnName="ordDetCreatedOn" />
+          <ScalarProperty Name="ordDetStoID" ColumnName="ordDetStoID" />
+          <ScalarProperty Name="ordDetProDefaultPrice" ColumnName="ordDetProDefaultPrice" />
+          <ScalarProperty Name="ordDetFinalTotal" ColumnName="ordDetFinalTotal" />
+          <ScalarProperty Name="ordDetDisTotal" ColumnName="ordDetDisTotal" />
+          <ScalarProperty Name="ordDetSubTotal" ColumnName="ordDetSubTotal" />
+          <ScalarProperty Name="ordDetPaymentID" ColumnName="ordDetPaymentID" />
+          <ScalarProperty Name="ordDetcusAddrID" ColumnName="ordDetcusAddrID" />
+          <ScalarProperty Name="ordDetProDiscount" ColumnName="ordDetProDiscount" />
+          <ScalarProperty Name="ordPickUp" ColumnName="ordPickUp" />
+          <ScalarProperty Name="ordDetWingRefNo" ColumnName="ordDetWingRefNo" />
+          <ScalarProperty Name="ordDetTotalPrice" ColumnName="ordDetTotalPrice" />
+          <ScalarProperty Name="ordDetProQty" ColumnName="ordDetProQty" />
+          <ScalarProperty Name="ordDetProPrice" ColumnName="ordDetProPrice" />
+          <ScalarProperty Name="ordDetPriceOriginalDisPrice" ColumnName="ordDetPriceOriginalDisPrice" />
+          <ScalarProperty Name="ordDetPriceOriginalPrice" ColumnName="ordDetPriceOriginalPrice" />
+          <ScalarProperty Name="invVarID" ColumnName="invVarID" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="ordID" ColumnName="ordID" />
+          <ScalarProperty Name="ordDetID" ColumnName="ordDetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDiscountDetails">
+      <EntityTypeMapping TypeName="AkShaakModel.OrderDiscountDetail">
+        <MappingFragment StoreEntitySet="OrderDiscountDetails">
+          <ScalarProperty Name="ordDisDetIsActive" ColumnName="ordDisDetIsActive" />
+          <ScalarProperty Name="ordDisDetIsDeleted" ColumnName="ordDisDetIsDeleted" />
+          <ScalarProperty Name="ordDisDetModifiedBy" ColumnName="ordDisDetModifiedBy" />
+          <ScalarProperty Name="ordDisDetModifiedOn" ColumnName="ordDisDetModifiedOn" />
+          <ScalarProperty Name="ordDisDetCreatedBy" ColumnName="ordDisDetCreatedBy" />
+          <ScalarProperty Name="ordDisDetCreatedOn" ColumnName="ordDisDetCreatedOn" />
+          <ScalarProperty Name="stoOffID" ColumnName="stoOffID" />
+          <ScalarProperty Name="ordID" ColumnName="ordID" />
+          <ScalarProperty Name="ordDisDetID" ColumnName="ordDisDetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="AkShaakModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ordIsActive" ColumnName="ordIsActive" />
+          <ScalarProperty Name="ordIsDeleted" ColumnName="ordIsDeleted" />
+          <ScalarProperty Name="ordModifiedBy" ColumnName="ordModifiedBy" />
+          <ScalarProperty Name="ordModifiedOn" ColumnName="ordModifiedOn" />
+          <ScalarProperty Name="ordCreatedBy" ColumnName="ordCreatedBy" />
+          <ScalarProperty Name="ordCreatedOn" ColumnName="ordCreatedOn" />
+          <ScalarProperty Name="ordTaxPer" ColumnName="ordTaxPer" />
+          <ScalarProperty Name="ordSignature" ColumnName="ordSignature" />
+          <ScalarProperty Name="ordFrom" ColumnName="ordFrom" />
+          <ScalarProperty Name="ordPaymentStatus" ColumnName="ordPaymentStatus" />
+          <ScalarProperty Name="ordOfferCode" ColumnName="ordOfferCode" />
+          <ScalarProperty Name="ordGrandTotal" ColumnName="ordGrandTotal" />
+          <ScalarProperty Name="ordCashPayment" ColumnName="ordCashPayment" />
+          <ScalarProperty Name="ordCreditPayment" ColumnName="ordCreditPayment" />
+          <ScalarProperty Name="ordTotalTax" ColumnName="ordTotalTax" />
+          <ScalarProperty Name="ordDeliveryCharges" ColumnName="ordDeliveryCharges" />
+          <ScalarProperty Name="ordTotalDiscount" ColumnName="ordTotalDiscount" />
+          <ScalarProperty Name="ordSubTotal" ColumnName="ordSubTotal" />
+          <ScalarProperty Name="ordCancelRemark" ColumnName="ordCancelRemark" />
+          <ScalarProperty Name="ordDeliveryTime" ColumnName="ordDeliveryTime" />
+          <ScalarProperty Name="ordDeliveryType" ColumnName="ordDeliveryType" />
+          <ScalarProperty Name="ordStatus" ColumnName="ordStatus" />
+          <ScalarProperty Name="ordDatetime" ColumnName="ordDatetime" />
+          <ScalarProperty Name="ordNumber" ColumnName="ordNumber" />
+          <ScalarProperty Name="delMapID" ColumnName="delMapID" />
+          <ScalarProperty Name="payTypID" ColumnName="payTypID" />
+          <ScalarProperty Name="cusAddID" ColumnName="cusAddID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="ordID" ColumnName="ordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrdersPayments">
+      <EntityTypeMapping TypeName="AkShaakModel.OrdersPayment">
+        <MappingFragment StoreEntitySet="OrdersPayment">
+          <ScalarProperty Name="ordPayIsActive" ColumnName="ordPayIsActive" />
+          <ScalarProperty Name="ordPayIsDeleted" ColumnName="ordPayIsDeleted" />
+          <ScalarProperty Name="ordPayModifiedBy" ColumnName="ordPayModifiedBy" />
+          <ScalarProperty Name="ordPayModifiedOn" ColumnName="ordPayModifiedOn" />
+          <ScalarProperty Name="ordPayCreatedBy" ColumnName="ordPayCreatedBy" />
+          <ScalarProperty Name="ordPayCreatedOn" ColumnName="ordPayCreatedOn" />
+          <ScalarProperty Name="ordPayAmount" ColumnName="ordPayAmount" />
+          <ScalarProperty Name="ordPayTransactionStatus" ColumnName="ordPayTransactionStatus" />
+          <ScalarProperty Name="ordPayTransactionNo" ColumnName="ordPayTransactionNo" />
+          <ScalarProperty Name="ordPayTransactionID" ColumnName="ordPayTransactionID" />
+          <ScalarProperty Name="ordID" ColumnName="ordID" />
+          <ScalarProperty Name="ordPayID" ColumnName="ordPayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatusMasts">
+      <EntityTypeMapping TypeName="AkShaakModel.OrderStatusMast">
+        <MappingFragment StoreEntitySet="OrderStatusMast">
+          <ScalarProperty Name="ordStatusIsActive" ColumnName="ordStatusIsActive" />
+          <ScalarProperty Name="ordStatusNameAr" ColumnName="ordStatusNameAr" />
+          <ScalarProperty Name="ordStatusName" ColumnName="ordStatusName" />
+          <ScalarProperty Name="ordStatusID" ColumnName="ordStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Packages">
+      <EntityTypeMapping TypeName="AkShaakModel.Package">
+        <MappingFragment StoreEntitySet="Packages">
+          <ScalarProperty Name="pacIsActive" ColumnName="pacIsActive" />
+          <ScalarProperty Name="pacIsDeleted" ColumnName="pacIsDeleted" />
+          <ScalarProperty Name="pacModifiedBy" ColumnName="pacModifiedBy" />
+          <ScalarProperty Name="pacModifiedOn" ColumnName="pacModifiedOn" />
+          <ScalarProperty Name="pacCreatedBy" ColumnName="pacCreatedBy" />
+          <ScalarProperty Name="pacCreatedOn" ColumnName="pacCreatedOn" />
+          <ScalarProperty Name="pacFinalPrice" ColumnName="pacFinalPrice" />
+          <ScalarProperty Name="pacDisAmount" ColumnName="pacDisAmount" />
+          <ScalarProperty Name="pacDisValue" ColumnName="pacDisValue" />
+          <ScalarProperty Name="disID" ColumnName="disID" />
+          <ScalarProperty Name="pacTaxAmount" ColumnName="pacTaxAmount" />
+          <ScalarProperty Name="pacTaxValue" ColumnName="pacTaxValue" />
+          <ScalarProperty Name="taxID" ColumnName="taxID" />
+          <ScalarProperty Name="pacType" ColumnName="pacType" />
+          <ScalarProperty Name="pacPrice" ColumnName="pacPrice" />
+          <ScalarProperty Name="pacProductCount" ColumnName="pacProductCount" />
+          <ScalarProperty Name="pacCategoriesCount" ColumnName="pacCategoriesCount" />
+          <ScalarProperty Name="pacStoresCount" ColumnName="pacStoresCount" />
+          <ScalarProperty Name="pacDescription" ColumnName="pacDescription" />
+          <ScalarProperty Name="pacName" ColumnName="pacName" />
+          <ScalarProperty Name="pacID" ColumnName="pacID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentsInfoes">
+      <EntityTypeMapping TypeName="AkShaakModel.PaymentsInfo">
+        <MappingFragment StoreEntitySet="PaymentsInfo">
+          <ScalarProperty Name="payInfIsActive" ColumnName="payInfIsActive" />
+          <ScalarProperty Name="payInfIsDeleted" ColumnName="payInfIsDeleted" />
+          <ScalarProperty Name="payInfModifiedBy" ColumnName="payInfModifiedBy" />
+          <ScalarProperty Name="payInfModifiedOn" ColumnName="payInfModifiedOn" />
+          <ScalarProperty Name="payinfCreatedBy" ColumnName="payinfCreatedBy" />
+          <ScalarProperty Name="payInfCreatedOn" ColumnName="payInfCreatedOn" />
+          <ScalarProperty Name="payInfFinalPrice" ColumnName="payInfFinalPrice" />
+          <ScalarProperty Name="payInfDisAmount" ColumnName="payInfDisAmount" />
+          <ScalarProperty Name="payInfTaxAmount" ColumnName="payInfTaxAmount" />
+          <ScalarProperty Name="payInfPrice" ColumnName="payInfPrice" />
+          <ScalarProperty Name="payInfDate" ColumnName="payInfDate" />
+          <ScalarProperty Name="payInfTransactionStatus" ColumnName="payInfTransactionStatus" />
+          <ScalarProperty Name="payInfTransactionNo" ColumnName="payInfTransactionNo" />
+          <ScalarProperty Name="payTypID" ColumnName="payTypID" />
+          <ScalarProperty Name="merID" ColumnName="merID" />
+          <ScalarProperty Name="payInfID" ColumnName="payInfID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTypes">
+      <EntityTypeMapping TypeName="AkShaakModel.PaymentType">
+        <MappingFragment StoreEntitySet="PaymentTypes">
+          <ScalarProperty Name="payTypIsActive" ColumnName="payTypIsActive" />
+          <ScalarProperty Name="payTypIsDeleted" ColumnName="payTypIsDeleted" />
+          <ScalarProperty Name="payTypModifiedBy" ColumnName="payTypModifiedBy" />
+          <ScalarProperty Name="payTypModifiedOn" ColumnName="payTypModifiedOn" />
+          <ScalarProperty Name="payTypCreatedBy" ColumnName="payTypCreatedBy" />
+          <ScalarProperty Name="payTypCreatedOn" ColumnName="payTypCreatedOn" />
+          <ScalarProperty Name="payTypIcon" ColumnName="payTypIcon" />
+          <ScalarProperty Name="payTypDescriptionAr" ColumnName="payTypDescriptionAr" />
+          <ScalarProperty Name="payTypDescription" ColumnName="payTypDescription" />
+          <ScalarProperty Name="payTypNameAr" ColumnName="payTypNameAr" />
+          <ScalarProperty Name="payTypName" ColumnName="payTypName" />
+          <ScalarProperty Name="payTypID" ColumnName="payTypID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_Badges">
+      <EntityTypeMapping TypeName="AkShaakModel.Product_Badges">
+        <MappingFragment StoreEntitySet="Product_Badges">
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="BadgeId" ColumnName="BadgeId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="StoId" ColumnName="StoId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductContains">
+      <EntityTypeMapping TypeName="AkShaakModel.ProductContain">
+        <MappingFragment StoreEntitySet="ProductContains">
+          <ScalarProperty Name="proConIsActive" ColumnName="proConIsActive" />
+          <ScalarProperty Name="proConIsDeleted" ColumnName="proConIsDeleted" />
+          <ScalarProperty Name="proConModifedBy" ColumnName="proConModifedBy" />
+          <ScalarProperty Name="proConModifiedOn" ColumnName="proConModifiedOn" />
+          <ScalarProperty Name="proConCreatedBy" ColumnName="proConCreatedBy" />
+          <ScalarProperty Name="proConCreatedOn" ColumnName="proConCreatedOn" />
+          <ScalarProperty Name="proSortNo" ColumnName="proSortNo" />
+          <ScalarProperty Name="proConIcon" ColumnName="proConIcon" />
+          <ScalarProperty Name="proConDescription" ColumnName="proConDescription" />
+          <ScalarProperty Name="proConSeoName" ColumnName="proConSeoName" />
+          <ScalarProperty Name="proConNameAr" ColumnName="proConNameAr" />
+          <ScalarProperty Name="proConName" ColumnName="proConName" />
+          <ScalarProperty Name="catID" ColumnName="catID" />
+          <ScalarProperty Name="proConID" ColumnName="proConID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductContainsMappings">
+      <EntityTypeMapping TypeName="AkShaakModel.ProductContainsMapping">
+        <MappingFragment StoreEntitySet="ProductContainsMapping">
+          <ScalarProperty Name="proConMapCreatedBy" ColumnName="proConMapCreatedBy" />
+          <ScalarProperty Name="proConMapCreatedOn" ColumnName="proConMapCreatedOn" />
+          <ScalarProperty Name="proConID" ColumnName="proConID" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="proConMapID" ColumnName="proConMapID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductGallaries">
+      <EntityTypeMapping TypeName="AkShaakModel.ProductGallary">
+        <MappingFragment StoreEntitySet="ProductGallary">
+          <ScalarProperty Name="proGalIsActive" ColumnName="proGalIsActive" />
+          <ScalarProperty Name="proGalIsDeleted" ColumnName="proGalIsDeleted" />
+          <ScalarProperty Name="proGalModifiedBy" ColumnName="proGalModifiedBy" />
+          <ScalarProperty Name="proGalModifiedOn" ColumnName="proGalModifiedOn" />
+          <ScalarProperty Name="proGalCreatedBy" ColumnName="proGalCreatedBy" />
+          <ScalarProperty Name="proGalCreatedOn" ColumnName="proGalCreatedOn" />
+          <ScalarProperty Name="proGalImgName" ColumnName="proGalImgName" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="proGalID" ColumnName="proGalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductionTimes">
+      <EntityTypeMapping TypeName="AkShaakModel.ProductionTime">
+        <MappingFragment StoreEntitySet="ProductionTime">
+          <ScalarProperty Name="prodTimIsActive" ColumnName="prodTimIsActive" />
+          <ScalarProperty Name="prodTimIsDeleted" ColumnName="prodTimIsDeleted" />
+          <ScalarProperty Name="prodTimModifiedBy" ColumnName="prodTimModifiedBy" />
+          <ScalarProperty Name="prodTimModifiedOn" ColumnName="prodTimModifiedOn" />
+          <ScalarProperty Name="prodTimCreatedBy" ColumnName="prodTimCreatedBy" />
+          <ScalarProperty Name="prodTimCreatedOn" ColumnName="prodTimCreatedOn" />
+          <ScalarProperty Name="prodTimDays" ColumnName="prodTimDays" />
+          <ScalarProperty Name="prodTimNameAr" ColumnName="prodTimNameAr" />
+          <ScalarProperty Name="prodTimName" ColumnName="prodTimName" />
+          <ScalarProperty Name="prodTimID" ColumnName="prodTimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductKeywords">
+      <EntityTypeMapping TypeName="AkShaakModel.ProductKeyword">
+        <MappingFragment StoreEntitySet="ProductKeywords">
+          <ScalarProperty Name="KeywordEn" ColumnName="KeywordEn" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductKeywordsArabics">
+      <EntityTypeMapping TypeName="AkShaakModel.ProductKeywordsArabic">
+        <MappingFragment StoreEntitySet="ProductKeywordsArabic">
+          <ScalarProperty Name="KeywordAr" ColumnName="KeywordAr" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="AkShaakModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="proIsActive" ColumnName="proIsActive" />
+          <ScalarProperty Name="proIsDeleted" ColumnName="proIsDeleted" />
+          <ScalarProperty Name="proModifiedBy" ColumnName="proModifiedBy" />
+          <ScalarProperty Name="proModifiedOn" ColumnName="proModifiedOn" />
+          <ScalarProperty Name="proCreatedBy" ColumnName="proCreatedBy" />
+          <ScalarProperty Name="proCreatedOn" ColumnName="proCreatedOn" />
+          <ScalarProperty Name="proIsApproved" ColumnName="proIsApproved" />
+          <ScalarProperty Name="proIsSubmitted" ColumnName="proIsSubmitted" />
+          <ScalarProperty Name="proIsPopular" ColumnName="proIsPopular" />
+          <ScalarProperty Name="proWeight" ColumnName="proWeight" />
+          <ScalarProperty Name="proIsRecomemded" ColumnName="proIsRecomemded" />
+          <ScalarProperty Name="proFinalAmount" ColumnName="proFinalAmount" />
+          <ScalarProperty Name="proDisAmount" ColumnName="proDisAmount" />
+          <ScalarProperty Name="proDisValue" ColumnName="proDisValue" />
+          <ScalarProperty Name="proIamResShipCost" ColumnName="proIamResShipCost" />
+          <ScalarProperty Name="proBuyResShipCost" ColumnName="proBuyResShipCost" />
+          <ScalarProperty Name="excRetTimID" ColumnName="excRetTimID" />
+          <ScalarProperty Name="proHideFromShop" ColumnName="proHideFromShop" />
+          <ScalarProperty Name="proMetaDescriptionArb" ColumnName="proMetaDescriptionArb" />
+          <ScalarProperty Name="proMetaDescription" ColumnName="proMetaDescription" />
+          <ScalarProperty Name="proMetaKeywordArb" ColumnName="proMetaKeywordArb" />
+          <ScalarProperty Name="proMetaKeyword" ColumnName="proMetaKeyword" />
+          <ScalarProperty Name="prodTimID" ColumnName="prodTimID" />
+          <ScalarProperty Name="proPerDayQty" ColumnName="proPerDayQty" />
+          <ScalarProperty Name="proAvailableQty" ColumnName="proAvailableQty" />
+          <ScalarProperty Name="proDefaultPrice" ColumnName="proDefaultPrice" />
+          <ScalarProperty Name="proImg" ColumnName="proImg" />
+          <ScalarProperty Name="proDescriptionArb" ColumnName="proDescriptionArb" />
+          <ScalarProperty Name="proDescription" ColumnName="proDescription" />
+          <ScalarProperty Name="proSeoName" ColumnName="proSeoName" />
+          <ScalarProperty Name="proNameArb" ColumnName="proNameArb" />
+          <ScalarProperty Name="proName" ColumnName="proName" />
+          <ScalarProperty Name="proType" ColumnName="proType" />
+          <ScalarProperty Name="proCode" ColumnName="proCode" />
+          <ScalarProperty Name="stoDisID" ColumnName="stoDisID" />
+          <ScalarProperty Name="stoTaxID" ColumnName="stoTaxID" />
+          <ScalarProperty Name="catID" ColumnName="catID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ratings">
+      <EntityTypeMapping TypeName="AkShaakModel.Rating">
+        <MappingFragment StoreEntitySet="Rating">
+          <ScalarProperty Name="ratIsActive" ColumnName="ratIsActive" />
+          <ScalarProperty Name="ratIsDeleted" ColumnName="ratIsDeleted" />
+          <ScalarProperty Name="ratModifiedBy" ColumnName="ratModifiedBy" />
+          <ScalarProperty Name="ratModifiedOn" ColumnName="ratModifiedOn" />
+          <ScalarProperty Name="ratCreatedBy" ColumnName="ratCreatedBy" />
+          <ScalarProperty Name="ratCreatedOn" ColumnName="ratCreatedOn" />
+          <ScalarProperty Name="ratDate" ColumnName="ratDate" />
+          <ScalarProperty Name="ratValue" ColumnName="ratValue" />
+          <ScalarProperty Name="ratRemarks" ColumnName="ratRemarks" />
+          <ScalarProperty Name="ordID" ColumnName="ordID" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="ratID" ColumnName="ratID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RatingProducts">
+      <EntityTypeMapping TypeName="AkShaakModel.RatingProduct">
+        <MappingFragment StoreEntitySet="RatingProduct">
+          <ScalarProperty Name="proRatIsActive" ColumnName="proRatIsActive" />
+          <ScalarProperty Name="proRatIsDeleted" ColumnName="proRatIsDeleted" />
+          <ScalarProperty Name="proRatModifiedBy" ColumnName="proRatModifiedBy" />
+          <ScalarProperty Name="proRatModifiedOn" ColumnName="proRatModifiedOn" />
+          <ScalarProperty Name="proRatCreatedBy" ColumnName="proRatCreatedBy" />
+          <ScalarProperty Name="proRatCreatedOn" ColumnName="proRatCreatedOn" />
+          <ScalarProperty Name="proRatDate" ColumnName="proRatDate" />
+          <ScalarProperty Name="proRatValue" ColumnName="proRatValue" />
+          <ScalarProperty Name="proRatRemarks" ColumnName="proRatRemarks" />
+          <ScalarProperty Name="ordID" ColumnName="ordID" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="proRatID" ColumnName="proRatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Residents">
+      <EntityTypeMapping TypeName="AkShaakModel.Resident">
+        <MappingFragment StoreEntitySet="Resident">
+          <ScalarProperty Name="resIsActive" ColumnName="resIsActive" />
+          <ScalarProperty Name="resIsDeleted" ColumnName="resIsDeleted" />
+          <ScalarProperty Name="resModifiedBy" ColumnName="resModifiedBy" />
+          <ScalarProperty Name="resModifiedOn" ColumnName="resModifiedOn" />
+          <ScalarProperty Name="resCreatedBy" ColumnName="resCreatedBy" />
+          <ScalarProperty Name="resCreatedOn" ColumnName="resCreatedOn" />
+          <ScalarProperty Name="resNameAr" ColumnName="resNameAr" />
+          <ScalarProperty Name="resName" ColumnName="resName" />
+          <ScalarProperty Name="resID" ColumnName="resID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="AkShaakModel.Role">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="rolIsActive" ColumnName="rolIsActive" />
+          <ScalarProperty Name="rolIsDeleted" ColumnName="rolIsDeleted" />
+          <ScalarProperty Name="rolModifiedBy" ColumnName="rolModifiedBy" />
+          <ScalarProperty Name="rolModifiedOn" ColumnName="rolModifiedOn" />
+          <ScalarProperty Name="rolCreatedBy" ColumnName="rolCreatedBy" />
+          <ScalarProperty Name="rolCreatedOn" ColumnName="rolCreatedOn" />
+          <ScalarProperty Name="rolName" ColumnName="rolName" />
+          <ScalarProperty Name="rolID" ColumnName="rolID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesMappings">
+      <EntityTypeMapping TypeName="AkShaakModel.RolesMapping">
+        <MappingFragment StoreEntitySet="RolesMapping">
+          <ScalarProperty Name="rolMapIsActive" ColumnName="rolMapIsActive" />
+          <ScalarProperty Name="rolMapIsDeleted" ColumnName="rolMapIsDeleted" />
+          <ScalarProperty Name="rolMapModifiedBy" ColumnName="rolMapModifiedBy" />
+          <ScalarProperty Name="rolMapModifiedOn" ColumnName="rolMapModifiedOn" />
+          <ScalarProperty Name="rolMapCreatedBy" ColumnName="rolMapCreatedBy" />
+          <ScalarProperty Name="rolMapCreatedOn" ColumnName="rolMapCreatedOn" />
+          <ScalarProperty Name="rolID" ColumnName="rolID" />
+          <ScalarProperty Name="admRegID" ColumnName="admRegID" />
+          <ScalarProperty Name="rolMapID" ColumnName="rolMapID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopCategories">
+      <EntityTypeMapping TypeName="AkShaakModel.ShopCategory">
+        <MappingFragment StoreEntitySet="ShopCategories">
+          <ScalarProperty Name="shoCatIsActive" ColumnName="shoCatIsActive" />
+          <ScalarProperty Name="shoCatIsDeleted" ColumnName="shoCatIsDeleted" />
+          <ScalarProperty Name="shoCatModifiedBy" ColumnName="shoCatModifiedBy" />
+          <ScalarProperty Name="shoCatModifiedOn" ColumnName="shoCatModifiedOn" />
+          <ScalarProperty Name="shoCatCreatedBy" ColumnName="shoCatCreatedBy" />
+          <ScalarProperty Name="shoCatCreatedOn" ColumnName="shoCatCreatedOn" />
+          <ScalarProperty Name="shoCatIcon" ColumnName="shoCatIcon" />
+          <ScalarProperty Name="shoCatSeoName" ColumnName="shoCatSeoName" />
+          <ScalarProperty Name="shoCatChildrenCount" ColumnName="shoCatChildrenCount" />
+          <ScalarProperty Name="shoCatLevel" ColumnName="shoCatLevel" />
+          <ScalarProperty Name="shoCatPosition" ColumnName="shoCatPosition" />
+          <ScalarProperty Name="shoCatParentID" ColumnName="shoCatParentID" />
+          <ScalarProperty Name="shoCatImg" ColumnName="shoCatImg" />
+          <ScalarProperty Name="shoCatDescriptionAr" ColumnName="shoCatDescriptionAr" />
+          <ScalarProperty Name="shoCatDescription" ColumnName="shoCatDescription" />
+          <ScalarProperty Name="shoCatNameAr" ColumnName="shoCatNameAr" />
+          <ScalarProperty Name="shoCatName" ColumnName="shoCatName" />
+          <ScalarProperty Name="shoCatID" ColumnName="shoCatID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShopCategoryMappings">
+      <EntityTypeMapping TypeName="AkShaakModel.ShopCategoryMapping">
+        <MappingFragment StoreEntitySet="ShopCategoryMapping">
+          <ScalarProperty Name="shoCatMapIsActive" ColumnName="shoCatMapIsActive" />
+          <ScalarProperty Name="shoCatMapIsDeleted" ColumnName="shoCatMapIsDeleted" />
+          <ScalarProperty Name="shoCatMapModifiedBy" ColumnName="shoCatMapModifiedBy" />
+          <ScalarProperty Name="shoCatMapModifiedOn" ColumnName="shoCatMapModifiedOn" />
+          <ScalarProperty Name="shoCatMapCreatedBy" ColumnName="shoCatMapCreatedBy" />
+          <ScalarProperty Name="shoCatMapCreatedOn" ColumnName="shoCatMapCreatedOn" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="shoCatID" ColumnName="shoCatID" />
+          <ScalarProperty Name="shoCatMapID" ColumnName="shoCatMapID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SocialMedias">
+      <EntityTypeMapping TypeName="AkShaakModel.SocialMedia">
+        <MappingFragment StoreEntitySet="SocialMedia">
+          <ScalarProperty Name="socMedIsActive" ColumnName="socMedIsActive" />
+          <ScalarProperty Name="socMedIsDeleted" ColumnName="socMedIsDeleted" />
+          <ScalarProperty Name="socMedModifiedBy" ColumnName="socMedModifiedBy" />
+          <ScalarProperty Name="socMedModifiedOn" ColumnName="socMedModifiedOn" />
+          <ScalarProperty Name="socMedCreatedBy" ColumnName="socMedCreatedBy" />
+          <ScalarProperty Name="socMedCreatedOn" ColumnName="socMedCreatedOn" />
+          <ScalarProperty Name="socMedLink" ColumnName="socMedLink" />
+          <ScalarProperty Name="socMedName" ColumnName="socMedName" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="socMedMasID" ColumnName="socMedMasID" />
+          <ScalarProperty Name="socMedID" ColumnName="socMedID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SocialMediaMasters">
+      <EntityTypeMapping TypeName="AkShaakModel.SocialMediaMaster">
+        <MappingFragment StoreEntitySet="SocialMediaMaster">
+          <ScalarProperty Name="socMedMasIsActive" ColumnName="socMedMasIsActive" />
+          <ScalarProperty Name="socMedMasIsDeleted" ColumnName="socMedMasIsDeleted" />
+          <ScalarProperty Name="socMedModifiedBy" ColumnName="socMedModifiedBy" />
+          <ScalarProperty Name="socMedModifiedOn" ColumnName="socMedModifiedOn" />
+          <ScalarProperty Name="socMedCreatedBy" ColumnName="socMedCreatedBy" />
+          <ScalarProperty Name="socMedCreatedOn" ColumnName="socMedCreatedOn" />
+          <ScalarProperty Name="socMedMasIcon" ColumnName="socMedMasIcon" />
+          <ScalarProperty Name="socMedMasNameAr" ColumnName="socMedMasNameAr" />
+          <ScalarProperty Name="socMedMasName" ColumnName="socMedMasName" />
+          <ScalarProperty Name="socMedMasID" ColumnName="socMedMasID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sponsors">
+      <EntityTypeMapping TypeName="AkShaakModel.Sponsor">
+        <MappingFragment StoreEntitySet="Sponsors">
+          <ScalarProperty Name="spoIsActive" ColumnName="spoIsActive" />
+          <ScalarProperty Name="spoIsDeleted" ColumnName="spoIsDeleted" />
+          <ScalarProperty Name="spoModifiedBy" ColumnName="spoModifiedBy" />
+          <ScalarProperty Name="spoModifiedOn" ColumnName="spoModifiedOn" />
+          <ScalarProperty Name="spoCreatedBy" ColumnName="spoCreatedBy" />
+          <ScalarProperty Name="spoCreatedOn" ColumnName="spoCreatedOn" />
+          <ScalarProperty Name="spoSeoName" ColumnName="spoSeoName" />
+          <ScalarProperty Name="spoLink" ColumnName="spoLink" />
+          <ScalarProperty Name="spoImg" ColumnName="spoImg" />
+          <ScalarProperty Name="spoDescription" ColumnName="spoDescription" />
+          <ScalarProperty Name="spoName" ColumnName="spoName" />
+          <ScalarProperty Name="spoID" ColumnName="spoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreAddresses">
+      <EntityTypeMapping TypeName="AkShaakModel.StoreAddress">
+        <MappingFragment StoreEntitySet="StoreAddress">
+          <ScalarProperty Name="stoPersonalDelCitID" ColumnName="stoPersonalDelCitID" />
+          <ScalarProperty Name="stoPersonalDelAvl" ColumnName="stoPersonalDelAvl" />
+          <ScalarProperty Name="stoAddIsActive" ColumnName="stoAddIsActive" />
+          <ScalarProperty Name="stoAddIsDeleted" ColumnName="stoAddIsDeleted" />
+          <ScalarProperty Name="stoAddModifiedBy" ColumnName="stoAddModifiedBy" />
+          <ScalarProperty Name="stoAddModifiedOn" ColumnName="stoAddModifiedOn" />
+          <ScalarProperty Name="stoAddCreatedBy" ColumnName="stoAddCreatedBy" />
+          <ScalarProperty Name="stoAddCreatedOn" ColumnName="stoAddCreatedOn" />
+          <ScalarProperty Name="stoAddAvailablePikup" ColumnName="stoAddAvailablePikup" />
+          <ScalarProperty Name="stoAddShowMyLoc" ColumnName="stoAddShowMyLoc" />
+          <ScalarProperty Name="stoAddFloor" ColumnName="stoAddFloor" />
+          <ScalarProperty Name="stoAddStreet" ColumnName="stoAddStreet" />
+          <ScalarProperty Name="stoAddType" ColumnName="stoAddType" />
+          <ScalarProperty Name="stoAddLatitude" ColumnName="stoAddLatitude" />
+          <ScalarProperty Name="stoAddLongitude" ColumnName="stoAddLongitude" />
+          <ScalarProperty Name="stoAddAptNo" ColumnName="stoAddAptNo" />
+          <ScalarProperty Name="StoAddBuilding" ColumnName="StoAddBuilding" />
+          <ScalarProperty Name="stoAddArea" ColumnName="stoAddArea" />
+          <ScalarProperty Name="stoAddZipcode" ColumnName="stoAddZipcode" />
+          <ScalarProperty Name="stoAddCountry" ColumnName="stoAddCountry" />
+          <ScalarProperty Name="stoAddState" ColumnName="stoAddState" />
+          <ScalarProperty Name="stoAddCity" ColumnName="stoAddCity" />
+          <ScalarProperty Name="stoBVType" ColumnName="stoBVType" />
+          <ScalarProperty Name="stoAddAddress" ColumnName="stoAddAddress" />
+          <ScalarProperty Name="citID" ColumnName="citID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoAddID" ColumnName="stoAddID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreDeliveryMappings">
+      <EntityTypeMapping TypeName="AkShaakModel.StoreDeliveryMapping">
+        <MappingFragment StoreEntitySet="StoreDeliveryMapping">
+          <ScalarProperty Name="stoDelIsEnabled" ColumnName="stoDelIsEnabled" />
+          <ScalarProperty Name="stoDelMapAmt" ColumnName="stoDelMapAmt" />
+          <ScalarProperty Name="citID" ColumnName="citID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoDelMapID" ColumnName="stoDelMapID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreFavroties">
+      <EntityTypeMapping TypeName="AkShaakModel.StoreFavroty">
+        <MappingFragment StoreEntitySet="StoreFavroties">
+          <ScalarProperty Name="stoFavCreatedOn" ColumnName="stoFavCreatedOn" />
+          <ScalarProperty Name="cusID" ColumnName="cusID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoFavID" ColumnName="stoFavID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreLicenses">
+      <EntityTypeMapping TypeName="AkShaakModel.StoreLicense">
+        <MappingFragment StoreEntitySet="StoreLicense">
+          <ScalarProperty Name="stoLicIsDeleted" ColumnName="stoLicIsDeleted" />
+          <ScalarProperty Name="stoLicIsActive" ColumnName="stoLicIsActive" />
+          <ScalarProperty Name="stoLicModifiedBy" ColumnName="stoLicModifiedBy" />
+          <ScalarProperty Name="stoLicModifiedOn" ColumnName="stoLicModifiedOn" />
+          <ScalarProperty Name="stoLicCreatedBy" ColumnName="stoLicCreatedBy" />
+          <ScalarProperty Name="stoLicCreatedOn" ColumnName="stoLicCreatedOn" />
+          <ScalarProperty Name="stoLicETraderRegisteredActivity" ColumnName="stoLicETraderRegisteredActivity" />
+          <ScalarProperty Name="stoLicETraderLicenseExpirydate" ColumnName="stoLicETraderLicenseExpirydate" />
+          <ScalarProperty Name="stoLicETraderLicenseNumber" ColumnName="stoLicETraderLicenseNumber" />
+          <ScalarProperty Name="stoLicEmiratesExpirydate" ColumnName="stoLicEmiratesExpirydate" />
+          <ScalarProperty Name="stoLicEmiratesIDNumber" ColumnName="stoLicEmiratesIDNumber" />
+          <ScalarProperty Name="stoLicEmirateIDName" ColumnName="stoLicEmirateIDName" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoLicID" ColumnName="stoLicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreOffres">
+      <EntityTypeMapping TypeName="AkShaakModel.StoreOffre">
+        <MappingFragment StoreEntitySet="StoreOffres">
+          <ScalarProperty Name="stoOffIsActive" ColumnName="stoOffIsActive" />
+          <ScalarProperty Name="stoOffIsDeleted" ColumnName="stoOffIsDeleted" />
+          <ScalarProperty Name="stoOffModifiedBy" ColumnName="stoOffModifiedBy" />
+          <ScalarProperty Name="stoOffModifiedOn" ColumnName="stoOffModifiedOn" />
+          <ScalarProperty Name="stoOffCreatedBy" ColumnName="stoOffCreatedBy" />
+          <ScalarProperty Name="stoOffCreatedOn" ColumnName="stoOffCreatedOn" />
+          <ScalarProperty Name="stoOffOrderCount" ColumnName="stoOffOrderCount" />
+          <ScalarProperty Name="stoOffMsg" ColumnName="stoOffMsg" />
+          <ScalarProperty Name="stoOffMinAmt" ColumnName="stoOffMinAmt" />
+          <ScalarProperty Name="stoOffDiscount" ColumnName="stoOffDiscount" />
+          <ScalarProperty Name="stoOffToDate" ColumnName="stoOffToDate" />
+          <ScalarProperty Name="stoOffFromDate" ColumnName="stoOffFromDate" />
+          <ScalarProperty Name="stoOffCode" ColumnName="stoOffCode" />
+          <ScalarProperty Name="stoOffExtInt" ColumnName="stoOffExtInt" />
+          <ScalarProperty Name="stoOffType" ColumnName="stoOffType" />
+          <ScalarProperty Name="stoOffLink" ColumnName="stoOffLink" />
+          <ScalarProperty Name="stoOffDesc" ColumnName="stoOffDesc" />
+          <ScalarProperty Name="stoOffImg" ColumnName="stoOffImg" />
+          <ScalarProperty Name="proID" ColumnName="proID" />
+          <ScalarProperty Name="offTypID" ColumnName="offTypID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoOffID" ColumnName="stoOffID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StorePaymentTypes">
+      <EntityTypeMapping TypeName="AkShaakModel.StorePaymentType">
+        <MappingFragment StoreEntitySet="StorePaymentTypes">
+          <ScalarProperty Name="stoPayTypIsActive" ColumnName="stoPayTypIsActive" />
+          <ScalarProperty Name="stoPayTypIsDeleted" ColumnName="stoPayTypIsDeleted" />
+          <ScalarProperty Name="stoPayTypModifiedBy" ColumnName="stoPayTypModifiedBy" />
+          <ScalarProperty Name="stoPayTypModifiedOn" ColumnName="stoPayTypModifiedOn" />
+          <ScalarProperty Name="stoPayTypCreatedBy" ColumnName="stoPayTypCreatedBy" />
+          <ScalarProperty Name="stoPayTypCreatedOn" ColumnName="stoPayTypCreatedOn" />
+          <ScalarProperty Name="payTypID" ColumnName="payTypID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoPayTypID" ColumnName="stoPayTypID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="AkShaakModel.Store">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="ngoID" ColumnName="ngoID" />
+          <ScalarProperty Name="stoCheckoutdisable" ColumnName="stoCheckoutdisable" />
+          <ScalarProperty Name="stoIsAcceptOrder" ColumnName="stoIsAcceptOrder" />
+          <ScalarProperty Name="stoEndTime" ColumnName="stoEndTime" />
+          <ScalarProperty Name="stoStartTime" ColumnName="stoStartTime" />
+          <ScalarProperty Name="stoEndDate" ColumnName="stoEndDate" />
+          <ScalarProperty Name="stoStartDate" ColumnName="stoStartDate" />
+          <ScalarProperty Name="stoShopStatus" ColumnName="stoShopStatus" />
+          <ScalarProperty Name="stoDeliveryCharges" ColumnName="stoDeliveryCharges" />
+          <ScalarProperty Name="stoShopPolicies" ColumnName="stoShopPolicies" />
+          <ScalarProperty Name="stoIsClosed" ColumnName="stoIsClosed" />
+          <ScalarProperty Name="stoIsActive" ColumnName="stoIsActive" />
+          <ScalarProperty Name="stoIsDeleted" ColumnName="stoIsDeleted" />
+          <ScalarProperty Name="stoModifiedBy" ColumnName="stoModifiedBy" />
+          <ScalarProperty Name="stoModifiedOn" ColumnName="stoModifiedOn" />
+          <ScalarProperty Name="stoCreatedBy" ColumnName="stoCreatedBy" />
+          <ScalarProperty Name="stoCreatedOn" ColumnName="stoCreatedOn" />
+          <ScalarProperty Name="stoMetaDescription" ColumnName="stoMetaDescription" />
+          <ScalarProperty Name="stoMetaKeyword" ColumnName="stoMetaKeyword" />
+          <ScalarProperty Name="stoTimeZone" ColumnName="stoTimeZone" />
+          <ScalarProperty Name="stoInventory" ColumnName="stoInventory" />
+          <ScalarProperty Name="stoPublished" ColumnName="stoPublished" />
+          <ScalarProperty Name="stoApproved" ColumnName="stoApproved" />
+          <ScalarProperty Name="stoLink" ColumnName="stoLink" />
+          <ScalarProperty Name="stoSeoName" ColumnName="stoSeoName" />
+          <ScalarProperty Name="stoSMTPSSL" ColumnName="stoSMTPSSL" />
+          <ScalarProperty Name="stoSMTPPort" ColumnName="stoSMTPPort" />
+          <ScalarProperty Name="stoSMTPPassword" ColumnName="stoSMTPPassword" />
+          <ScalarProperty Name="stoSMTPEmail" ColumnName="stoSMTPEmail" />
+          <ScalarProperty Name="stoAdminCCEmails" ColumnName="stoAdminCCEmails" />
+          <ScalarProperty Name="stoAdminEmails" ColumnName="stoAdminEmails" />
+          <ScalarProperty Name="stoBgImgName" ColumnName="stoBgImgName" />
+          <ScalarProperty Name="stoLogo" ColumnName="stoLogo" />
+          <ScalarProperty Name="stoImgName" ColumnName="stoImgName" />
+          <ScalarProperty Name="stoOwnerName" ColumnName="stoOwnerName" />
+          <ScalarProperty Name="stoContactNo" ColumnName="stoContactNo" />
+          <ScalarProperty Name="stoEmailID" ColumnName="stoEmailID" />
+          <ScalarProperty Name="stoArbDescription" ColumnName="stoArbDescription" />
+          <ScalarProperty Name="stoArbName" ColumnName="stoArbName" />
+          <ScalarProperty Name="stoDescription" ColumnName="stoDescription" />
+          <ScalarProperty Name="stoName" ColumnName="stoName" />
+          <ScalarProperty Name="lanIDArb" ColumnName="lanIDArb" />
+          <ScalarProperty Name="lanID" ColumnName="lanID" />
+          <ScalarProperty Name="shoCatID" ColumnName="shoCatID" />
+          <ScalarProperty Name="couID" ColumnName="couID" />
+          <ScalarProperty Name="curID" ColumnName="curID" />
+          <ScalarProperty Name="merID" ColumnName="merID" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoresDiscounts">
+      <EntityTypeMapping TypeName="AkShaakModel.StoresDiscount">
+        <MappingFragment StoreEntitySet="StoresDiscount">
+          <ScalarProperty Name="stoDisIsActive" ColumnName="stoDisIsActive" />
+          <ScalarProperty Name="stoDisIsDeleted" ColumnName="stoDisIsDeleted" />
+          <ScalarProperty Name="stoDisModifiedBy" ColumnName="stoDisModifiedBy" />
+          <ScalarProperty Name="stoDisModifiedOn" ColumnName="stoDisModifiedOn" />
+          <ScalarProperty Name="stoDisCreatedBy" ColumnName="stoDisCreatedBy" />
+          <ScalarProperty Name="stoDisCreatedOn" ColumnName="stoDisCreatedOn" />
+          <ScalarProperty Name="stoDisToDate" ColumnName="stoDisToDate" />
+          <ScalarProperty Name="stoDisFromDate" ColumnName="stoDisFromDate" />
+          <ScalarProperty Name="stoDisIsDefault" ColumnName="stoDisIsDefault" />
+          <ScalarProperty Name="stoDisValue" ColumnName="stoDisValue" />
+          <ScalarProperty Name="stoDisType" ColumnName="stoDisType" />
+          <ScalarProperty Name="stoDisName" ColumnName="stoDisName" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoDisID" ColumnName="stoDisID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoresGallaries">
+      <EntityTypeMapping TypeName="AkShaakModel.StoresGallary">
+        <MappingFragment StoreEntitySet="StoresGallary">
+          <ScalarProperty Name="stoGalIsActive" ColumnName="stoGalIsActive" />
+          <ScalarProperty Name="stoGalIsDeleted" ColumnName="stoGalIsDeleted" />
+          <ScalarProperty Name="stoGalModifiedBy" ColumnName="stoGalModifiedBy" />
+          <ScalarProperty Name="stoGalModifiedOn" ColumnName="stoGalModifiedOn" />
+          <ScalarProperty Name="stoGalCreatedBy" ColumnName="stoGalCreatedBy" />
+          <ScalarProperty Name="stoGalCreatedOn" ColumnName="stoGalCreatedOn" />
+          <ScalarProperty Name="stoGalImgName" ColumnName="stoGalImgName" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoGalID" ColumnName="stoGalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoresTaxes">
+      <EntityTypeMapping TypeName="AkShaakModel.StoresTax">
+        <MappingFragment StoreEntitySet="StoresTax">
+          <ScalarProperty Name="stoTaxIsActive" ColumnName="stoTaxIsActive" />
+          <ScalarProperty Name="stoTaxIsDeleted" ColumnName="stoTaxIsDeleted" />
+          <ScalarProperty Name="stoTaxModifiedBy" ColumnName="stoTaxModifiedBy" />
+          <ScalarProperty Name="stoTaxModifiedOn" ColumnName="stoTaxModifiedOn" />
+          <ScalarProperty Name="stoTaxCreatedBy" ColumnName="stoTaxCreatedBy" />
+          <ScalarProperty Name="stoTaxCreatedOn" ColumnName="stoTaxCreatedOn" />
+          <ScalarProperty Name="stoTaxIsDefault" ColumnName="stoTaxIsDefault" />
+          <ScalarProperty Name="stoTaxValue" ColumnName="stoTaxValue" />
+          <ScalarProperty Name="stoTaxType" ColumnName="stoTaxType" />
+          <ScalarProperty Name="stoTaxName" ColumnName="stoTaxName" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoTaxID" ColumnName="stoTaxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StoreTimings">
+      <EntityTypeMapping TypeName="AkShaakModel.StoreTiming">
+        <MappingFragment StoreEntitySet="StoreTimings">
+          <ScalarProperty Name="stoTimIsActive" ColumnName="stoTimIsActive" />
+          <ScalarProperty Name="stoTimIsDeleted" ColumnName="stoTimIsDeleted" />
+          <ScalarProperty Name="stoTimModifiedBy" ColumnName="stoTimModifiedBy" />
+          <ScalarProperty Name="stoTimModifiedOn" ColumnName="stoTimModifiedOn" />
+          <ScalarProperty Name="stoTimCreatedBy" ColumnName="stoTimCreatedBy" />
+          <ScalarProperty Name="stoTimCreatedOn" ColumnName="stoTimCreatedOn" />
+          <ScalarProperty Name="stoTimClosingTime" ColumnName="stoTimClosingTime" />
+          <ScalarProperty Name="stoTimOpeningTime" ColumnName="stoTimOpeningTime" />
+          <ScalarProperty Name="stoTimDayName" ColumnName="stoTimDayName" />
+          <ScalarProperty Name="stoID" ColumnName="stoID" />
+          <ScalarProperty Name="stoTimID" ColumnName="stoTimID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuperAdminLogins">
+      <EntityTypeMapping TypeName="AkShaakModel.SuperAdminLogin">
+        <MappingFragment StoreEntitySet="SuperAdminLogin">
+          <ScalarProperty Name="supAdmLogIsActive" ColumnName="supAdmLogIsActive" />
+          <ScalarProperty Name="supAdmLogIsDeleted" ColumnName="supAdmLogIsDeleted" />
+          <ScalarProperty Name="supAdmLogModifiedBy" ColumnName="supAdmLogModifiedBy" />
+          <ScalarProperty Name="supAdmLogModifiedOn" ColumnName="supAdmLogModifiedOn" />
+          <ScalarProperty Name="supAdmLogCreatedBy" ColumnName="supAdmLogCreatedBy" />
+          <ScalarProperty Name="supAdmLogCreatedOn" ColumnName="supAdmLogCreatedOn" />
+          <ScalarProperty Name="supAdmLogPassword" ColumnName="supAdmLogPassword" />
+          <ScalarProperty Name="supAdmLogUserName" ColumnName="supAdmLogUserName" />
+          <ScalarProperty Name="supAdmLogID" ColumnName="supAdmLogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Taxes">
+      <EntityTypeMapping TypeName="AkShaakModel.Tax">
+        <MappingFragment StoreEntitySet="Tax">
+          <ScalarProperty Name="taxIsActive" ColumnName="taxIsActive" />
+          <ScalarProperty Name="taxIsDeleted" ColumnName="taxIsDeleted" />
+          <ScalarProperty Name="taxModifiedBy" ColumnName="taxModifiedBy" />
+          <ScalarProperty Name="taxModifiedOn" ColumnName="taxModifiedOn" />
+          <ScalarProperty Name="taxCreatedBy" ColumnName="taxCreatedBy" />
+          <ScalarProperty Name="taxCreatedOn" ColumnName="taxCreatedOn" />
+          <ScalarProperty Name="taxValue" ColumnName="taxValue" />
+          <ScalarProperty Name="taxType" ColumnName="taxType" />
+          <ScalarProperty Name="taxName" ColumnName="taxName" />
+          <ScalarProperty Name="taxID" ColumnName="taxID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackingAramexes">
+      <EntityTypeMapping TypeName="AkShaakModel.TrackingAramex">
+        <MappingFragment StoreEntitySet="TrackingAramex">
+          <ScalarProperty Name="IsEmailSent" ColumnName="IsEmailSent" />
+          <ScalarProperty Name="FileURL" ColumnName="FileURL" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="MerchantId" ColumnName="MerchantId" />
+          <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="AramexID" ColumnName="AramexID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackOrders">
+      <EntityTypeMapping TypeName="AkShaakModel.TrackOrder">
+        <MappingFragment StoreEntitySet="TrackOrders">
+          <ScalarProperty Name="traOrdIsActive" ColumnName="traOrdIsActive" />
+          <ScalarProperty Name="traOrdIsDeleted" ColumnName="traOrdIsDeleted" />
+          <ScalarProperty Name="traOrdModifiedBy" ColumnName="traOrdModifiedBy" />
+          <ScalarProperty Name="traOrdModifiedOn" ColumnName="traOrdModifiedOn" />
+          <ScalarProperty Name="traOrdCreatedBy" ColumnName="traOrdCreatedBy" />
+          <ScalarProperty Name="traOrdCreatedOn" ColumnName="traOrdCreatedOn" />
+          <ScalarProperty Name="traOrdDate" ColumnName="traOrdDate" />
+          <ScalarProperty Name="traOrdText" ColumnName="traOrdText" />
+          <ScalarProperty Name="ordStaID" ColumnName="ordStaID" />
+          <ScalarProperty Name="ordDetID" ColumnName="ordDetID" />
+          <ScalarProperty Name="traOrdID" ColumnName="traOrdID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WeekDays">
+      <EntityTypeMapping TypeName="AkShaakModel.WeekDay">
+        <MappingFragment StoreEntitySet="WeekDays">
+          <ScalarProperty Name="weeDaySort" ColumnName="weeDaySort" />
+          <ScalarProperty Name="weeDayIsActive" ColumnName="weeDayIsActive" />
+          <ScalarProperty Name="weeDayIsDeleted" ColumnName="weeDayIsDeleted" />
+          <ScalarProperty Name="weeDayModifiedBy" ColumnName="weeDayModifiedBy" />
+          <ScalarProperty Name="weeDayModifiedOn" ColumnName="weeDayModifiedOn" />
+          <ScalarProperty Name="weeDayCreatedBy" ColumnName="weeDayCreatedBy" />
+          <ScalarProperty Name="weeDayCreatedOn" ColumnName="weeDayCreatedOn" />
+          <ScalarProperty Name="weeDayNameAr" ColumnName="weeDayNameAr" />
+          <ScalarProperty Name="weeDayName" ColumnName="weeDayName" />
+          <ScalarProperty Name="weeDayID" ColumnName="weeDayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WingWeights">
+      <EntityTypeMapping TypeName="AkShaakModel.WingWeight">
+        <MappingFragment StoreEntitySet="WingWeight">
+          <ScalarProperty Name="weighttextAr" ColumnName="weighttextAr" />
+          <ScalarProperty Name="weighttext" ColumnName="weighttext" />
+          <ScalarProperty Name="weightkg" ColumnName="weightkg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllCategories" FunctionName="AkShaakModel.Store.usp_GetAllCategories" />
+  </EntityContainerMapping>
+</Mapping>
